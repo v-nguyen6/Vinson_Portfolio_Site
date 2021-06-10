@@ -8,10 +8,10 @@ import React from "react";
 
 
 //--------------------------------------------------------------
-const Splash = () => {
+const SinglePortfolioProject = () => {
     return (
 
     );
 }
 
-export default Splash;
+export default SinglePortfolioProject;
