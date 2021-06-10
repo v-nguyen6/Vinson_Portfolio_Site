@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+/*
+----------------------------------------------------------------
+General React Dependencies / Custom Imports & Components
+----------------------------------------------------------------
+*/
+// React Dependencies
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 
+// Google Analytics
+import ReactGA from "react-ga"; 
+
+// Layouts & Pages
+//import Header from "./components"
+
+
+//--------------------------------------------------------------
 function App() {
+  const [currDesktop, setCurrDesktop] = useState(true);
+
+  // Google Analytics
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <h1>das it mane</h1>
+    
+    </Router>
+    
   );
 }
 
