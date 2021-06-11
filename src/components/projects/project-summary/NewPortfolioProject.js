@@ -9,9 +9,7 @@ import React from "react";
 
 //--------------------------------------------------------------
 const NewPortfolioProject = () => {
-    return (
-
-    );
+ 
 }
 
 export default NewPortfolioProject;

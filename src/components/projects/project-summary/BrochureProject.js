@@ -9,9 +9,7 @@ import React from "react";
 
 //--------------------------------------------------------------
 const BrochureProject = () => {
-    return (
 
-    );
 }
 
 export default BrochureProject;

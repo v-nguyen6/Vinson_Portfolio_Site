@@ -9,9 +9,7 @@ import React from "react";
 
 //--------------------------------------------------------------
 const SingleMovieAppProject = () => {
-    return (
 
-    );
 }
 
 export default SingleMovieAppProject;
