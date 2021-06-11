@@ -8,11 +8,10 @@ import React from "react";
 
 
 //--------------------------------------------------------------
-const WorkSummary = () => {
+const MovieAppProject = () => {
     return (
-        
-    );
 
+    );
 }
 
-export default WorkSummary;
+export default MovieAppProject;

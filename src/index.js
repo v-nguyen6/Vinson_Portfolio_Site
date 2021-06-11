@@ -1,7 +1,19 @@
+/*
+----------------------------------------------------------------
+General React Dependencies / Custom Imports & Components
+----------------------------------------------------------------
+*/
+// React Dependencies
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+// import App.js 
 import App from './App';
+// not sure yet 
+// import "aos/dist/aos.css";
+
+// Stylesheet
+
+
 
 
 ReactDOM.render(
