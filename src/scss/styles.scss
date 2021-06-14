@@ -4,45 +4,50 @@
 ----------------------------------------------------------------------
 
 | ------ Table of Contents ------
-| 0. Base
-|   - All Element Selectors
-|   - Normalize / Reset
-|   - Stylesheet (Colors / Typography / Fonts)
-|  
-| 1. Layouts
-|   - Header
-|   - Footer
-|   - Navigation
+| 0. Abstracts/ 
+|   |- _abstracts.scss         # Sass Variables
+|                              # Sass Mixins
 |
-| 2. Abstracts 
-|   - Variables
-|   - Mixins
+| 1. Base/
+|   |- _base.scss              # All Element Selectors
+|                              # Stylesheet (Colors / Typography / Fonts)
+|   |- _normalize.scss         # Normalize / Reset
+|   
+| 2. Components/
+|   |- _components.scss        # Buttons / Links Styles
+|                              # Input Styles
+|                              # Widget Styles
 |
-| 3. Components
-|   - Buttons / Links Styles
-|   - Input Styles
-|   - Widget Styles
+| 3. Layout/
+|   |- _footer.scss            # Footer
+|   |- _header.scss            # Header
+|   |- _navigation.scss        # Navigation
 |
-| 4. Pages
-|   - Individual Page Styles
+| 4. Pages/
+|   |-> about-page
+|   |- _about.scss             # About Page Specific Styles
 |
+|   |-> home-page
+|   |- _project-summaries.scss # Single Project Summaries (Home Page)
+|
+|- styles.scss - (Main Sass File)
 */
 
 // Set encoding
 @charset "utf-8";
 
+// Abstracts
+@import "./2-abstracts/abstracts";
+
 // Base 
 @import "./0-base/base";
+
+// Components
+@import "./3-components/components";
 
 // Layouts
 @import "./1-layouts/footer";
 @import "./1-layouts/header";
-
-// Abstracts
-@import "./2-abstracts/abstracts";
-
-// Components
-@import "./3-components/components";
 
 // Pages 
 
