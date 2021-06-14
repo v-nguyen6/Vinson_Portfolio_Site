@@ -23,11 +23,70 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleNav = () => {
-        const navigation = document.querySelector("nav.main-nav")
+        const navigation = document.querySelector("nav.main-nav");
+        const socialIcons = document.querySelector("aside.social-icons");
 
+        if(!isOpen) {
+            navigation.classList.add("main-nav--active");
+            socialIcons.style.display = "none";
+            //window.scrollBy(0, 40);
+        } else {
+            navigation.classList.remove("main-nav--active");
+            socialIcons.style.display = "flex";
+        }
     }
 
- 
+    // Create media query for navigation/hamburger menu 
+    const hideNav = () => {
+        const navigation = document.querySelector("nav.main-nav");
+        // Hides nav --> shows hamburger menu
+        if (window.innerWidth <= 750) {
+            if (navigation.classList.contains("main-nav--active")) {
+                navigation.classList.remove("main-nav--active");
+                setIsOpen(false);
+            }
+        }
+    }
+
+    return (
+        <header>
+            <Headroom>
+                <Link to={"/"}>
+                    <h1 className="nav-logo">
+                        <span>Vinson</span> Nguyen
+                    </h1>
+                </Link>
+
+                {/* Hamburger Menu Button */}
+                <div className="hamburger-button"
+                     onClick={() => {
+                     toggleNav();
+                    }}
+                >
+                    <Hamburger toggled={isOpen} toggle={setIsOpen} size="25" />    
+                </div>
+
+                {/* Main Navigation */}
+                <nav className="main-nav"
+                     style={{display: "none"}}
+                     onClick={() => {
+                        hideNav();
+                        //window.scrollBy(0, -50);
+                     }}
+                >
+                    <ul className="main-nav__ul">
+                        <li className="main-nav__list-item">
+                            
+                        </li>
+                    </ul>
+
+                </nav>
+
+
+            </Headroom>
+        </header>
+    );
 }
+
 
 export default Header;

@@ -37,20 +37,19 @@
 @charset "utf-8";
 
 // Abstracts
-@import "./2-abstracts/abstracts";
+@import "./0-abstracts/abstracts";
 
 // Base 
-@import "./0-base/base";
+@import "./1-base/base";
 
 // Components
-@import "./3-components/components";
+@import "./2-components/components";
 
 // Layouts
-@import "./1-layouts/footer";
-@import "./1-layouts/header";
+@import "./3-layout/footer";
+@import "./3-layout/header";
 
 // Pages 
-
 
 
 
