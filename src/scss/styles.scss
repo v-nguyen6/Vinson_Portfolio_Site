@@ -5,12 +5,11 @@
 
 | ------ Table of Contents ------
 | 0. Abstracts/ 
-|   |- _abstracts.scss         # Sass Variables
-|                              # Sass Mixins
+|   |- _variable.scss          # Sass Variables
+|   |- _mixins.scss            # Sass Mixins
 |
 | 1. Base/
 |   |- _base.scss              # All Element Selectors
-|                              # Stylesheet (Colors / Typography / Fonts)
 |   |- _normalize.scss         # Normalize / Reset
 |   
 | 2. Components/
@@ -37,7 +36,8 @@
 @charset "utf-8";
 
 // Abstracts
-@import "./0-abstracts/abstracts";
+@import "./0-abstracts/mixins";
+@import "./0-abstracts/variables";
 
 // Base 
 @import "./1-base/base";

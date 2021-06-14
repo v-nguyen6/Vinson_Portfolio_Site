@@ -10,7 +10,7 @@ import React from "react";
 //--------------------------------------------------------------
 const Splash = () => {
     return (
-        <h1>Das it mane</h1>
+        <h1>Das it mane - splash.js</h1>
     );
   
 }

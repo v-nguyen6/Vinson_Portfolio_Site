@@ -9,6 +9,9 @@ import React from "react";
 
 //--------------------------------------------------------------
 const CapstoneProject = () => {
+    return (
+        <h1>Das it mane - capstoneproject.js</h1>
+    );
 
 }
 

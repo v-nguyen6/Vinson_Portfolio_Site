@@ -34,21 +34,17 @@ const Home = () => {
                     content="Portfolio website outlining the work and projects that I have completed as a Web Developer."
                 />
             </Helmet>
-            
             <Splash />
-            {/*
             <WorkSummary />
-            */}
             {/* Line to create a break in the page from WorkSummary --> Project Summaries */}
             <div>
+
             </div>
-            {/*
             <MovieAppProject />
             <CapstoneProject />
             <NewPortfolioProject />
             <PortfolioProject />
             <BrochureProject />
-            */}
         </React.Fragment>
     );
     

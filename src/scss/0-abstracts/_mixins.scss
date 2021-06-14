@@ -1,0 +1,11 @@
+/*
+----------------------------------------------------------------------
+* Mixins
+----------------------------------------------------------------------
+*/
+@mixin col-center-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
