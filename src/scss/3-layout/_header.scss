@@ -6,3 +6,22 @@
 // --- Imports
 @import "../0-abstracts/abstracts";
 
+header {
+    .headroom-wrapper {
+        width: 100%;
+        font-size: 1em;
+        background-color: blue;
+        .headroom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: inherit;
+            height: 60px;
+            background: black;
+
+        }
+
+
+    }
+}
