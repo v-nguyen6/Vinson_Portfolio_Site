@@ -54,6 +54,7 @@ function App() {
           <main classname="main-page">
             <Switch>
               <Route path="/" exact component={Home} />
+              {/*
               <Route path="/about" component={About} />
               <Route path="/filmdex-react-project" component={SingleMovieAppProject} />
               <Route path="/etoile-wordpress-project" component={SingleCapstoneProject} />
@@ -61,10 +62,13 @@ function App() {
               <Route path="/portfolio-project" component={SinglePortfolioProject} />
               <Route path="/keep-it-cheesy-brochure-project" component={SingleBrochureProject} />
               <Route path="*" component={Home} />
+              */}
             </Switch>
           </main>
         </div>
+        {/*
         <Footer />
+        */}
       </React.Fragment>
     </Router>
   );

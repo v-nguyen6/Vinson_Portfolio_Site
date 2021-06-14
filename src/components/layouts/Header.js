@@ -14,7 +14,7 @@ import Headroom from "react-headroom";
 // - Hamburger Menu (controls the creation and animation of hamburger menu)
 import { Twirl as Hamburger } from "hamburger-react";
 // - Custom React Icons (Custom Icon Library)
-import { FaTwitter, FaGithub, FaLinkedIn } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
 //--------------------------------------------------------------
@@ -76,17 +76,52 @@ const Header = () => {
                 >
                     <ul className="main-nav__ul">
                         <li className="main-nav__list-item">
-                            
+                            <Link to={"/"}>Home</Link>
+                        </li>
+                        <li className="main-nav__list-item">
+                            <Link to={"/about"}>About</Link>
+                        </li>
+                        <li className="main-nav__list-item">
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
 
+                    {/* Hamburger Menu Break */}
+                    <hr className="menu-break" />
+
+                    {/* Custom Social Icons */}
+                    <div className="menu-social-icons">
+                        {/* Determines size and color of imported icons */}
+                        <IconContext.Provider value={{color: "blue", size: "1.45em" }}>
+                            <a href="https://twitter.com/vinsondesigns"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               id="twitter-link"
+                            >
+                                <FaTwitter title="Twitter Social Media Icon" />
+                            </a>
+
+                            <a href="www.linkedin.com/in/vinson-nguyen"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               id="linkedin-link"
+                            >
+                                <FaLinkedinIn title="LinkedIn Social Media Icon" />
+                            </a>
+
+                            <a href="https://github.com/v-nguyen6"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               id="github-link"
+                            >
+                                <FaGithub title="Github Social Media Icon" />
+                            </a>
+                        </IconContext.Provider>
+                    </div>
                 </nav>
-
-
             </Headroom>
         </header>
     );
 }
-
 
 export default Header;

@@ -9,6 +9,9 @@ import React from "react";
 
 //--------------------------------------------------------------
 const Splash = () => {
+    return (
+        <h1>Das it mane</h1>
+    );
   
 }
 
