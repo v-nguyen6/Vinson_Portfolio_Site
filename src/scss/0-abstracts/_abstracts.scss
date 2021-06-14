@@ -1,8 +1,11 @@
 /*
 ---------------------------------------------------------------
-* Header Component Styling 
+* Abstracts
 ---------------------------------------------------------------
 */
-// --- Imports
-@import "../0-abstracts/abstracts";
+// --- Mixins
+@import "./mixins";
+
+// --- Variables
+@import "./variables";
 
