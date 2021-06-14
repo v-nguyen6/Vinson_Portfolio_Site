@@ -19,6 +19,14 @@ import { IconContext } from "react-icons/lib";
 
 //--------------------------------------------------------------
 const Header = () => {
+    // Create states for when header is open/closed (currently set to false)
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleNav = () => {
+        const navigation = document.querySelector("nav.main-nav")
+
+    }
+
  
 }
 
