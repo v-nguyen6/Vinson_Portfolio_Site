@@ -52,7 +52,7 @@ const Header = () => {
         <header>
             <Headroom>
                 <Link to={"/"}>
-                    <h1 className="nav-logo">
+                    <h1 className="header-logo">
                         <span>Vinson</span> Nguyen
                     </h1>
                 </Link>

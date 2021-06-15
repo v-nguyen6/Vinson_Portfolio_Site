@@ -10,18 +10,57 @@ header {
     .headroom-wrapper {
         width: 100%;
         font-size: 1em;
-        background-color: blue;
         .headroom {
+            width: inherit;
+            height: 60px;
+            background: black;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: inherit;
-            height: 60px;
-            background: black;
-
+            backdrop-filter: blur(10px);
+            color: white;
+            z-index: 9999;
         }
 
+        h1 {
+            font-size: 1.2em;
+            margin-left: 20px;
+            //font-family: ;
+            padding: 5px 10px;
+            span {
+                //font-family: ;
+            }
+        }
 
+        a {
+            border-style: none;
+            &:hover {
+                background: none;
+                color: red;
+            }
+        }
+
+        // Header Hamburger Button 
+        .hamburger-react {
+            margin-right: 10px;
+            &:hover {
+                //cursor: url(), auto;
+            }
+        }
+
+        // Navigation Styling
+        .main-nav {
+            // List Nav Items
+            .main-nav__ul .main-nav__list-item {
+                a {
+                    transition: all 0.5s ease-out;
+                    border-style: none;
+                    text-transform: uppercase;
+                    
+                }
+            }
+        }
+        
     }
 }
