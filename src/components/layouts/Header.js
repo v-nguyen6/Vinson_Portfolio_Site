@@ -40,7 +40,7 @@ const Header = () => {
     const hideNav = () => {
         const navigation = document.querySelector("nav.main-nav");
         // Hides nav --> shows hamburger menu
-        if (window.innerWidth <= 750) {
+        if (window.innerWidth <= 800) {
             if (navigation.classList.contains("main-nav--active")) {
                 navigation.classList.remove("main-nav--active");
                 setIsOpen(false);
