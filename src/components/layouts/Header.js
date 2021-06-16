@@ -28,13 +28,13 @@ const Header = () => {
 
         if(!isOpen) {
             navigation.classList.add("main-nav--active");
-            socialIcons.style.display = "none";
+            //socialIcons.style.display = "none";
             //window.scrollBy(0, 40);
         } else {
             navigation.classList.remove("main-nav--active");
-            socialIcons.style.display = "flex";
+            //socialIcons.style.display = "flex";
         }
-    }
+    };
 
     // Create media query for navigation/hamburger menu 
     const hideNav = () => {
@@ -46,7 +46,7 @@ const Header = () => {
                 setIsOpen(false);
             }
         }
-    }
+    };
 
     return (
         <header>

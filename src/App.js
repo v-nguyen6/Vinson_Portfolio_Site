@@ -50,8 +50,8 @@ function App() {
     <Router>
       <React.Fragment>
         <Header />
-        <div classname="wrapper">
-          <main classname="main-page">
+        <div className="wrapper">
+          <main className="main-page">
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/about" component={About} />

@@ -21,46 +21,160 @@ header {
             backdrop-filter: blur(10px);
             color: white;
             z-index: 9999;
-        }
 
-        h1 {
-            font-size: 1.2em;
-            margin-left: 20px;
-            //font-family: ;
-            padding: 5px 10px;
-            span {
+            h1 {
+                font-size: 1.2em;
+                margin-left: 20px;
                 //font-family: ;
+                padding: 5px 10px;
+                span {
+                    //font-family: ;
+                }
+            }
+
+            a {
+                border-style: none;
+                &:hover {
+                    background: none;
+                    color: indigo;
+                }
+            }
+
+            // Header Hamburger Button 
+            .hamburger-react {
+                margin-right: 10px;
+                &:hover {
+                    //cursor: url(), auto;
+                }
+            }
+
+            // Navigation Styling
+            .main-nav {
+                // List Nav Items
+                .main-nav__ul .main-nav__list-item {
+                    a {
+                        transition: all 0.5s ease-out;
+                        border-style: none;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: indigo;
+                        }
+                    }
+                }
+                // Media Query for Mobile/Tablet
+                @media screen and (max-width: 50em) {
+                    position: fixed;
+                    top: 60px;
+                    left: 0px;
+                    height: 100vh;
+                    width: 100%;
+                    z-index: 99;
+                    /*
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; 
+                    */
+                    // replace with mixin
+                    @include col-center-items;
+                    background: black;
+                    backdrop-filter: blur(10px);
+
+                    .main-nav__ul .main-nav__list-item {
+                        margin-bottom: 20px;
+                        font-size: 2em;
+                        text-align: center;
+                    }
+                }
+            }
+
+            // Navigation Menu Line Break
+            hr.menu-break {
+                background: red;
+                border: 3px solid red;
+                height: 3px;
+                width: 120px;
+                margin: 10px auto 20px auto;
+            }
+
+            // Social Media Icons Styling 
+            .menu-social-icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 125px;
             }
         }
+    }
+}
 
-        a {
-            border-style: none;
-            &:hover {
-                background: none;
-                color: red;
-            }
-        }
-
-        // Header Hamburger Button 
-        .hamburger-react {
-            margin-right: 10px;
-            &:hover {
-                //cursor: url(), auto;
-            }
-        }
-
-        // Navigation Styling
-        .main-nav {
-            // List Nav Items
-            .main-nav__ul .main-nav__list-item {
-                a {
-                    transition: all 0.5s ease-out;
-                    border-style: none;
-                    text-transform: uppercase;
-                    
+// Media Query for Header Section (50em == 800px)
+@media screen and (min-width: 800px) {
+    header {
+        .headroom-wrapper {
+            .headroom {
+                justify-content: space-around;
+                h1 {
+                    margin-left: 0px;
+                }
+                // Hide Hamburger Nav Button while in desktop view
+                .hamburger-react {
+                    display: none;
                 }
             }
         }
-        
     }
+
+    header {
+        .headroom-wrapper {
+            .headroom {
+                .main-nav {
+                    width: 250px;
+                    position: static;
+                    // Make sure to add !important to override any previous styling 
+                    display: block !important;
+                    &__ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        text-transform: lowercase;
+                        .main-nav__list-item {
+                            font-size: 1em;
+                        }
+                    }
+                }
+
+                // Make Break Line / Social Media Icons Hidden
+                .menu-break, 
+                .menu-social-icons {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Animation for sliding hamburger nav from bottom to top 
+.main-nav--active {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // Utilises @keyframe functionality 
+    animation: slide-in-bottom 0.9s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+// Keyframe Animation Inputs for slide-in-bottom
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
 }
