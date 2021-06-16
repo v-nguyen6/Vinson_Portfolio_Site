@@ -158,6 +158,7 @@ header {
 
 // Animation for sliding hamburger nav from bottom to top 
 .main-nav--active {
+    // make sure to set "display" so that the menu is rendered when clicked
     display: flex !important;
     flex-direction: column;
     justify-content: center;
@@ -174,7 +175,7 @@ header {
 
     100% {
         transform: translateY(0);
-        opacity: 1;
+        opacity: 0.95;
     }
 
 }
