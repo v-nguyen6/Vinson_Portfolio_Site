@@ -23,11 +23,15 @@
 |   |- _navigation.scss        # Navigation
 |
 | 4. Pages/
-|   |-> about-page
+|   |---> about-page
 |   |- _about.scss             # About Page Specific Styles
 |
-|   |-> home-page
+|   |----> home-page
 |   |- _project-summaries.scss # Single Project Summaries (Home Page)
+|
+|   |----> single-project-page
+|   |- _
+|
 |
 |- styles.scss - (Main Sass File)
 */
@@ -49,6 +53,7 @@
 @import "./3-layout/header";
 
 // Pages 
+@import "./4-pages/pages"
 
 
 
