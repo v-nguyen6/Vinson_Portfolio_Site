@@ -13,7 +13,7 @@ import App from './App';
 import "./scss/styles.scss";
 
 // *** not sure yet if need to use.. ***
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 
 // *** not sure yet if need to use.. ***
 // import "swiper/swiper.scss";

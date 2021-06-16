@@ -92,7 +92,7 @@ const Header = () => {
                     {/* Custom Social Icons */}
                     <div className="menu-social-icons">
                         {/* Determines size and color of imported icons */}
-                        <IconContext.Provider value={{color: "blue", size: "1.45em" }}>
+                        <IconContext.Provider value={{color: "magenta", size: "1.45em" }}>
                             <a href="https://twitter.com/vinsondesigns"
                                target="_blank"
                                rel="noopener noreferrer"
