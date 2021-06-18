@@ -28,6 +28,9 @@ import SinglePortfolioProject from "./components/projects/single-project-pages/S
 
 // Widgets
 //import Social from './components/
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 //--------------------------------------------------------------
 function App() {

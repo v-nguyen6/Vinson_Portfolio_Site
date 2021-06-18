@@ -1,0 +1,104 @@
+/*
+---------------------------------------------------------------
+* --- Splash Page Styling 
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+// Container Styling
+.splash {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    padding: 0px 30px;
+    width: 100%;
+    height: 100vh;
+    //margin: auto;
+    color: white;
+    min-height: 30em;
+    padding-bottom: 25%;
+
+    // Media Query for desktop mode (align container with the middle fo the screen for mobile, THEN desktop) 
+    @media screen and (min-width: 50em) {
+        //height: 100vh;
+        padding-bottom: 0%;
+    }
+}
+
+.splash .splash-text-container {
+    width: 100%;
+    height: 12em;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    margin-bottom: 15%;
+
+    // Long tagline text container
+    &__tagline {
+        color: red;
+        margin-bottom: 5px;
+        font-size: 5em;
+        line-height: 1.15;
+    }
+
+    // Titles/Roles
+    p {
+        margin-bottom: 25px;
+    }
+
+    .splash-button-container {
+        a {
+            font-size: 0.75em;
+            &:hover {
+                //cursor: url(""), auto;
+            }
+        }
+    }
+
+    // Media Query for text container 
+    @media screen and (min-width: 500px) {
+        padding-left: 15%;
+        margin-bottom: 150px;
+    }
+
+    @media screen and (min-width: 25em) {
+        &__tagline {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        .splash-button-container {
+            a {
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    @media screen and (min-width: 50em) {
+        max-width: 900px;
+        padding: 0px 0px 0px 10%;
+        &__tagline {
+            font-size: 3em;
+        }
+    }
+
+    @media screen and (min-width: 80em) {
+        max-width: 1250px;
+        &__tagline {
+            font-size: 4em;
+            width: 100%;
+        }
+    }
+
+    
+}
