@@ -30,10 +30,13 @@ import SinglePortfolioProject from "./components/projects/single-project-pages/S
 //import Social from './components/
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
+
 
 //--------------------------------------------------------------
 function App() {
+  // used to initialize AOS throughout the react app (must call only once!)
+  AOS.init();
+
   const [currDesktop, setCurrDesktop] = useState(true);
 
   // Google Analytics
