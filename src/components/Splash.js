@@ -11,10 +11,14 @@ import { Link } from "react-router-dom";
 // - Icon to Scroll down to "contact" section
 //import ScrollDownIcon from "./widgets/ScrollDownIcon";
 
+// AOS
+//import AOS from "aos";
+
 //--------------------------------------------------------------
 const Splash = () => {
+    // Initialize AOS plugin
+    //AOS.init();
    
-
     return (
         <article className="section splash">
             {/* Splash Text Content */}
@@ -22,6 +26,7 @@ const Splash = () => {
                 <h1 
                     className="splash-text-container__tagline"
                     data-aos="fade-right"
+                    data-aos-anchor-placement="center-bottom"
                     data-aos-easing="ease-out-quart"
                     data-aos-once="false"
                     data-aos-duration="850"
