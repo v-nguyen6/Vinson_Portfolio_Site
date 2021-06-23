@@ -7,7 +7,8 @@ General React Dependencies / Custom Imports & Components
 import React from "react";
 import { useEffect, useState } from "react";
 
-// Custom React Icons
+// Custom React Components
+// - Custom React Icons (Custom Icon Library)
 import { FaPaintRoller, FaSearch, FaPencilRuler } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { RiDeviceFill } from "react-icons/ri"; 
@@ -117,7 +118,7 @@ const WorkSummary = () => {
 
                         {/* Icon 03 */}
                         <div
-                            className="hightlights-icon-03"
+                            className="highlights-icon-03"
                             data-aos={isDesktop === true ? "fade-up" : "fade-right"}
                             data-aos-easing="ease-out-quart"
                             data-aos-once="false"

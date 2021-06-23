@@ -1,0 +1,133 @@
+/*
+---------------------------------------------------------------
+* --- Work Summary Styling
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+// * Projects 
+.summary {
+    width: 100%;
+    min-height: 750px;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(darkgrey, 0.875);
+    @media screen and (min-width: 50em) {
+        height: 100vh;
+    }
+ }
+
+// * Summary Sections
+.summary  {
+    padding: 20px;
+    margin: auto;
+    @include col-center-items;
+    // Work Summary Intro
+    &__intro {
+        margin-bottom: 50px;
+        max-width: 800px;
+        // Work Summary Header Text
+        h1 {
+            font-size: 4.25em;
+            // Header text is aliogned in middle of screen on mobile view
+            text-align: center;
+            margin-bottom: 15px;
+            @media screen and (min-width: 35em) {
+                text-align: left;
+                font-size: 7em;
+            }
+        }
+
+        // Accent Line
+        hr {
+            border: 1px solid blue;
+            width: 50px;
+            height: 5px;
+            background: blue;
+            margin: auto;
+            margin-bottom: 25px;
+            @media screen and (min-width: 35em) {
+                margin: 0px 0px 25px 22px;
+            }
+        }
+
+        // Work Summary Description Text
+        blockquote {
+            max-width: 500px;
+            margin: 0px 20px 0px 20px;
+            @media screen and (min-width: 50em) {
+                max-width: 800px;
+            }
+        }
+    }
+
+    &__highlights {
+        margin-bottom: 25px;
+        max-width: 800px;
+        @include col-center-items;
+
+        // Work Summary Titles
+        &__title {
+            font-size: 1em;
+            margin: 0px;
+            text-align: center;
+            padding: 25px;
+
+            @media screen and (min-width: 50em) {
+                width: 800px;
+            }
+        }
+
+        // Highlights Container
+        .highlights-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            @media screen and (min-width: 550px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                .highlights-icon-01,
+                .highlights-icon-02,
+                .highlights-icon-03,
+                .highlights-icon-04 {
+                    width: 190px;
+                    height: 190px;
+                    @include col-center-items;
+                    padding: 25px;
+                }
+
+                @media screen and (min-width: 50em) {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+        }
+
+        .highlights-icon-01,
+        .highlights-icon-02,
+        .highlights-icon-03,
+        .highlights-icon-04 {
+            @include col-center-items;
+            width: 175px;
+            height: 175px;
+
+            svg {
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                font-size: 0.8em;
+                text-align: center;
+            }
+        }
+    }
+
+
+    
+}

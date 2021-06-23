@@ -10,7 +10,7 @@ import React from "react";
 //--------------------------------------------------------------
 const Footer = () => {
     return (
-        <h1>Das it mane - footer.js</h1>
+        <h1>Das it mane - footer.js!</h1>
          
         
     );
