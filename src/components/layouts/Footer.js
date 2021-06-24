@@ -39,7 +39,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="button"
                 >
-                    Let's Chat!
+                    Let's Chat! / Reach Out To Me!
                 </a>
             </div>
             

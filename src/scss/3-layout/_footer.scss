@@ -1,0 +1,77 @@
+/*
+---------------------------------------------------------------
+* --- Footer Component Styling 
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../0-abstracts/abstracts";
+
+.footer {
+    color: white;
+    width: 100%;
+    font-size: 1em;
+    height: 40em;
+
+    // Top Section
+    &__top-section {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+
+        h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: white;
+            @media screen and (min-width: 50em) {
+                font-size: 2.75em;
+            }
+        }
+
+        button svg {
+            &:hover {
+                fill: hotpink;
+                color: hotpink;
+                //cursor: url(), auto;
+            }
+        }
+
+        a {
+            padding: 15px 40px;
+        }
+    }
+
+    // Bottom Section 
+    &__bottom-section {
+        background: rgba(darkblue, 0.875);
+        .footer-social-icons {
+            a {
+                border-style: none;
+                &:hover {
+                    background: red;
+                }
+            }
+        }
+
+        height: 25%;
+        @include col-center-items;
+        svg {
+            margin: 5px;
+            transition: all 0.4s ease-out;
+            &:hover {
+                fill: red;
+            }
+        }
+
+        h4 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .copyright {
+            font-size: 0.75em;
+        }
+    }
+}
