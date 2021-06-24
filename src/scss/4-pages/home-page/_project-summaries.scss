@@ -3,3 +3,11 @@
 * --- Project Summary Styling
 ---------------------------------------------------------------
 */
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+// Home Page Line Break
+.home-page-line-break {
+    @include vertical-line;
+    margin: 17% auto 10% auto;
+}

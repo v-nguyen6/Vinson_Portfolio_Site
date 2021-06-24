@@ -37,8 +37,13 @@ const Home = () => {
             <Splash />
             <WorkSummary />
             {/* Line to create a break in the page from WorkSummary --> Project Summaries */}
-            <div>
-
+            <div
+                className="home-page-line-break"
+                data-aos="fade-down"
+                data-aos-easing="ease-in-quad"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+            >
             </div>
             <MovieAppProject />
             <CapstoneProject />
