@@ -52,7 +52,6 @@ const Home = () => {
             <BrochureProject />
         </React.Fragment>
     );
-    
 }
 
 export default Home;
