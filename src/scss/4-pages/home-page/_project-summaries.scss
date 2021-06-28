@@ -11,3 +11,135 @@
     @include vertical-line;
     margin: 17% auto 10% auto;
 }
+
+// * Project Summaries
+.project-component {
+    @include col-center-items;
+    font-size: 1em;
+    width: 100%;
+    height: 500px;
+    padding: 45px 0px;
+    margin-bottom: 100px;
+    // Left Column - Banner Image
+    &__banner {
+        &--desktop {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            padding: 0px 20px 0px 20px;
+            height: auto;
+        }
+    }
+
+    // Right Column - Information Text
+    &__text-content {
+        color: white;
+        padding: 25px;
+        max-width: 450px;
+        width: 100%;
+        position: relative;
+        top: -12%;
+        //left: 2%;
+        @include col-center-items;
+        @media screen and (min-width: 450px) {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &__name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            @media screen and (min-width: 50em) {
+                font-size: 1.75em;
+            }
+
+            .accent-bar {
+                display: none;
+                @media screen and (min-width: 450px) {
+                    display: block;
+                    background: magenta;
+                    width: 25px;
+                    height: 3px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        &__subtitle {
+            font-size: 1em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            @media screen and (min-width: 50em) {
+                font-size: 1.25em;
+            }
+        }
+
+        &__excerpt {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        &__cta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .cta-btn {
+                width: 100%;
+                max-width: 250px;
+                margin: 5px 0px;
+                padding: 15px 0px;
+            }
+
+            @media screen and (min-width: 50em) {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                width: auto;
+                .cta-btn {
+                    width: auto;
+                    margin: 0px 10px 0px 0px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 50em) {
+        height: 350px;
+        @include row-center-items;
+        &__banner {
+            &--desktop {
+                margin: 0px 0px 0px 50px;
+            }
+        }
+
+        &__text-content {
+            max-width: 500px;
+            position: static;
+        }
+    }
+
+    @media screen and (min-width: 75em) {
+        height: 500px;
+        &__banner {
+            &--desktop {
+                max-width: 750px;
+            }
+        }
+
+        &__text-content {
+            position: relative;
+            top: 75px;
+        }
+    }
+}

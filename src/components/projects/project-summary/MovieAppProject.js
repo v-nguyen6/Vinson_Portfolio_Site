@@ -14,7 +14,7 @@ import SummaryBanner from "../../../assets/homepage/work_summary_filmdex.png";
 const MovieAppProject = () => {
     return (
         <article className="project-component" id="project-movie-app">
-            {/* Left Column */}
+            {/* Left Column - Banner Image */}
             <img
                 src={SummaryBanner}
                 className="project-component__banner--desktop"
@@ -27,7 +27,7 @@ const MovieAppProject = () => {
                 loading="lazy"
             />
 
-            {/* Right Column */}
+            {/* Right Column - Information Text */}
             <section
                 className="project-component__text-content"
                 data-aos="fade-up"
@@ -45,7 +45,6 @@ const MovieAppProject = () => {
 
                 <h2 className="project-component__text-content__subtitle">
                     React Movie Database 
-                    <div className="accent-bar"></div>
                 </h2>
 
                 <p className="project-component__text-content__excerpt">

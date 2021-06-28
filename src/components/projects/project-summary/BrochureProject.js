@@ -45,7 +45,6 @@ const BrochureProject = () => {
 
                 <h3 className="project-component__text-content__subtitle">
                     HTML / CSS Brochure Site
-                    <div className="accent-bar"></div>
                 </h3>
 
                 <p className="project-component__text-content__excerpt">

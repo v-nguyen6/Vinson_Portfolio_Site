@@ -45,7 +45,6 @@ const CapstoneProject = () => {
 
                 <h3 className="project-component__text-content__subtitle">
                     Wordpress Ecommerce Site
-                    <div className="accent-bar"></div>
                 </h3>
 
                 <p className="project-component__text-content__excerpt">
