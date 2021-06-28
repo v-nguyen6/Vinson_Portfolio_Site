@@ -17,7 +17,6 @@ import MovieAppProject from "./projects/project-summary/MovieAppProject";
 //import NewPortfolioProject from "./projects/project-summary/NewPortfolioProject";
 import PortfolioProject from "./projects/project-summary/PortfolioProject";
 
-
 //--------------------------------------------------------------
 const Home = () => {
     
