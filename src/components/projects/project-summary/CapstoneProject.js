@@ -13,11 +13,11 @@ import SummaryBanner from "../../../assets/homepage/work_summary_capstone.png";
 //--------------------------------------------------------------
 const CapstoneProject = () => {
     return (
-        <article className="summary-component" id="summary-movie-app">
+        <article className="project-component" id="project-capstone-site">
             {/* Left Column */}
             <img
                 src={SummaryBanner}
-                className="summary-component__banner--desktop"
+                className="project-component__banner--desktop"
                 data-aos="zoom-out-up"
                 data-aos-easing="ease-out-quart"
                 data-aos-once="false"
@@ -29,7 +29,7 @@ const CapstoneProject = () => {
 
             {/* Right Column */}
             <section
-                className="summary-component__text-content"
+                className="project-component__text-content"
                 data-aos="fade-up"
                 data-aos-easing="ease-out-quart"
                 data-aos-once="false"
@@ -38,23 +38,23 @@ const CapstoneProject = () => {
                 data-aos-mirror="true"
                 loading="lazy"
             >
-                <h2 className="summary-component__text-content__name">
+                <h2 className="project-component__text-content__name">
                     Etoile
                     <div className="accent-bar"></div>
                 </h2>
 
-                <h3 className="summary-component__text-content__subtitle">
+                <h3 className="project-component__text-content__subtitle">
                     Wordpress Ecommerce Site
                     <div className="accent-bar"></div>
                 </h3>
 
-                <p className="summary-component__text-content__excerpt">
+                <p className="project-component__text-content__excerpt">
                     Etoile is an ecommerce site that sells custom designed clothing that allows 
                     consumers to have the ability to upload their own design for production. The 
                     site was based upon and built using WordPress and Woocommerce.
                 </p>
 
-                <div className="summary-component__text-content__cta">
+                <div className="project-component__text-content__cta">
                     <Link to={"/etoile-wordpress-capstone"} className="cta-btn">
                         Learn More
                     </Link>

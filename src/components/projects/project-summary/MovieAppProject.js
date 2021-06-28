@@ -13,11 +13,11 @@ import SummaryBanner from "../../../assets/homepage/work_summary_filmdex.png";
 //--------------------------------------------------------------
 const MovieAppProject = () => {
     return (
-        <article className="summary-component" id="summary-movie-app">
+        <article className="project-component" id="project-movie-app">
             {/* Left Column */}
             <img
                 src={SummaryBanner}
-                className="summary-component__banner--desktop"
+                className="project-component__banner--desktop"
                 data-aos="zoom-out-up"
                 data-aos-easing="ease-out-quart"
                 data-aos-once="false"
@@ -29,7 +29,7 @@ const MovieAppProject = () => {
 
             {/* Right Column */}
             <section
-                className="summary-component__text-content"
+                className="project-component__text-content"
                 data-aos="fade-up"
                 data-aos-easing="ease-out-quart"
                 data-aos-once="false"
@@ -38,23 +38,23 @@ const MovieAppProject = () => {
                 data-aos-mirror="true"
                 loading="lazy"
             >
-                <h2 className="summary-component__text-content__name">
+                <h2 className="project-component__text-content__name">
                     Filmdex 
                     <div className="accent-bar"></div>
                 </h2>
 
-                <h2 className="summary-component__text-content__subtitle">
+                <h2 className="project-component__text-content__subtitle">
                     React Movie Database 
                     <div className="accent-bar"></div>
                 </h2>
 
-                <p className="summary-component__text-content__excerpt">
+                <p className="project-component__text-content__excerpt">
                     A movie database app that allows users to search movies, gather information 
                     and add favourite movies. Developed using React to create a dynamic site that 
                     also utilizes the API from The Movie Database (TMDb).
                 </p>
 
-                <div className="summary-component__text-content__cta">
+                <div className="project-component__text-content__cta">
                     <Link to={"/filmdex-movie-database-project"} className="cta-btn">
                         Learn More
                     </Link>

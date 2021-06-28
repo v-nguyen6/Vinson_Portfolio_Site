@@ -13,11 +13,11 @@ import SummaryBanner from "../../../assets/homepage/work_summary_brochure.png";
 //--------------------------------------------------------------
 const BrochureProject = () => {
     return (
-        <article className="summary-component" id="summary-movie-app">
+        <article className="project-component" id="project-brochure-site">
             {/* Left Column */}
             <img
                 src={SummaryBanner}
-                className="summary-component__banner--desktop"
+                className="project-component__banner--desktop"
                 data-aos="zoom-out-up"
                 data-aos-easing="ease-out-quart"
                 data-aos-once="false"
@@ -29,7 +29,7 @@ const BrochureProject = () => {
 
             {/* Right Column */}
             <section
-                className="summary-component__text-content"
+                className="project-component__text-content"
                 data-aos="fade-up"
                 data-aos-easing="ease-out-quart"
                 data-aos-once="false"
@@ -38,24 +38,24 @@ const BrochureProject = () => {
                 data-aos-mirror="true"
                 loading="lazy"
             >
-                <h2 className="summary-component__text-content__name">
+                <h2 className="project-component__text-content__name">
                     Take It Cheesy
                     <div className="accent-bar"></div>
                 </h2>
 
-                <h3 className="summary-component__text-content__subtitle">
+                <h3 className="project-component__text-content__subtitle">
                     HTML / CSS Brochure Site
                     <div className="accent-bar"></div>
                 </h3>
 
-                <p className="summary-component__text-content__excerpt">
+                <p className="project-component__text-content__excerpt">
                     A fictional gourmet cheese brochure site created using JavaScript, CSS/Sass and HTML. 
                     The site focuses on showcasing the production process and product selection of various 
                     gourmet cheeses. It also includes the ability for users to send inquiries and custom orders 
                     using a contact form. 
                 </p>
 
-                <div className="summary-component__text-content__cta">
+                <div className="project-component__text-content__cta">
                     <Link to={"/etoile-wordpress-capstone"} className="cta-btn">
                         Learn More
                     </Link>

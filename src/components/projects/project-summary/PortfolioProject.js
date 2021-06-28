@@ -13,11 +13,11 @@ import SummaryBanner from "../../../assets/homepage/work_summary_portfolio.png";
 //--------------------------------------------------------------
 const PortfolioProject = () => {
     return (
-        <article className="summary-component" id="summary-movie-app">
+        <article className="project-component" id="project-portfolio-site">
             {/* Left Column */}
             <img
                 src={SummaryBanner}
-                className="summary-component__banner--desktop"
+                className="project-component__banner--desktop"
                 data-aos="zoom-out-up"
                 data-aos-easing="ease-out-quart"
                 data-aos-once="false"
@@ -29,7 +29,7 @@ const PortfolioProject = () => {
 
             {/* Right Column */}
             <section
-                className="summary-component__text-content"
+                className="project-component__text-content"
                 data-aos="fade-up"
                 data-aos-easing="ease-out-quart"
                 data-aos-once="false"
@@ -38,22 +38,22 @@ const PortfolioProject = () => {
                 data-aos-mirror="true"
                 loading="lazy"
             >
-                <h2 className="summary-component__text-content__name">
+                <h2 className="project-component__text-content__name">
                      Portfolio 
                     <div className="accent-bar"></div>
                 </h2>
 
-                <h3 className="summary-component__text-content__subtitle">
+                <h3 className="project-component__text-content__subtitle">
                     React Portfolio Site 
                     <div className="accent-bar"></div>
                 </h3>
 
-                <p className="summary-component__text-content__excerpt">
+                <p className="project-component__text-content__excerpt">
                 This portfolio was designed and developed as a platform to showcase my 
                 overall development and design skills that I learned within the TWD program, built using React.
                 </p>
 
-                <div className="summary-component__text-content__cta">
+                <div className="project-component__text-content__cta">
                     <Link to={"/filmdex-movie-database-project"} className="cta-btn">
                         Learn More
                     </Link>
