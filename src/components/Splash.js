@@ -30,7 +30,7 @@ const Splash = () => {
                     data-aos-easing="ease-out-quart"
                     data-aos-once="false"
                     data-aos-duration="850"
-                    data-aos-mirror="true"
+                    //data-aos-mirror="true"
                 >
                     I build websites using innovative tools.
                 </h1>
@@ -41,7 +41,7 @@ const Splash = () => {
                     data-aos-once="false"
                     data-aos-delay="100"
                     data-aos-duration="850"
-                    data-aos-mirror="true"
+                    //data-aos-mirror="true"
                 >
                     Front-End Web Developer & Graphic Designer with background in UX / UI based in Vancouver, BC.
                 </p>
