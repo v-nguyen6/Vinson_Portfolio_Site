@@ -30,7 +30,7 @@ const Footer = () => {
                    data-aos-duration="800"
                    data-aos-mirror="true"
                 >
-                    Want to Contact Me? / Like My Work?
+                    Want to Contact Me? 
                 </h3>
 
                 {/* Email Link */}
