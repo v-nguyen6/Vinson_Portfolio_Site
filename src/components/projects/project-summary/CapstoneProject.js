@@ -59,7 +59,7 @@ const CapstoneProject = () => {
                     </Link>
 
                     <a
-                        href="https://etoile.bcitwebdeveloper.ca/"
+                        href="https://etoile.vinsonnguyen.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn"

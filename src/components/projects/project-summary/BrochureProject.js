@@ -60,7 +60,7 @@ const BrochureProject = () => {
                     </Link>
 
                     <a
-                        href="https://etoile.bcitwebdeveloper.ca/"
+                        href="http://vnguyen.bcitwebdeveloper.ca/keep_it_cheesy/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn"

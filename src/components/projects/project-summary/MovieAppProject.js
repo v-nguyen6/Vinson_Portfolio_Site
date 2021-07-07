@@ -59,7 +59,7 @@ const MovieAppProject = () => {
                     </Link>
 
                     <a
-                        href="http://vnguyen.bcitwebdeveloper.ca/twd-movie-app/"
+                        href="https://filmdex.vinsonnguyen.com/twd-movie-app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn"
