@@ -7,8 +7,9 @@ General React Dependencies / Custom Imports & Components
 import React from "react";
 import { Helmet } from "react-helmet";
 
-// Plugins
+// Plugins & Assets
 import AOS from "aos";
+import AboutImage from "../assets/about/about-image.png";
 
 //--------------------------------------------------------------
 const About = () => {
@@ -29,8 +30,18 @@ const About = () => {
             {/* About Section */}
             <section className="about-item my-summary">
                 {/* Intro Summary */}
-                <div className="about-image">
-                    <img></img>
+                <div className="my-summary__image">
+                    <img 
+                        src={AboutImage}
+                        alt="About Page Portrait"
+                        className="profile-image"
+                        data-aos="fade-right"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-once="false"
+                        data-aos-duration="750"
+                        data-aos-mirror="true"
+
+                    />
                 </div>
                 <div className="my-summary__text">
                     <h1
@@ -64,7 +75,7 @@ const About = () => {
                     />
 
                     <p
-                        className="summary"
+                        className="about-summary"
                         data-aos="fade-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-once="false"
@@ -78,7 +89,7 @@ const About = () => {
                         CSS, and JavaScript. 
                     </p>
                     <p
-                        className="summary"
+                        className="about-summary"
                         data-aos="fade-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-once="false"
@@ -95,7 +106,7 @@ const About = () => {
                         and work in a collaborative setting.
                     </p>
                     <p
-                        className="summary"
+                        className="about-summary"
                         data-aos="fade-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-once="false"

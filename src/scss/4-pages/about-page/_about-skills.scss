@@ -1,0 +1,109 @@
+/*
+---------------------------------------------------------------
+* --- About Page Styling - Technical Skills
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+.artillery {
+    font-size: 1em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin: auto;
+    width: 100%;
+    height: 50em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+
+    // Target all selectors
+    .col-development-stack, 
+    .col-design-stack,
+    .col-technical-skills {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 275px;
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+
+        @media screen and (min-width: 50em) {
+            margin: 0px;
+            padding: 0px;
+            justify-content: flex-start;
+        }
+
+        hr {
+            width: 50px;
+            height: 4px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            @media screen and (min-width: 50em) {
+                font-size: 1.7em;
+            }
+        }
+
+        ul {
+            li {
+                font-size: 0.85em;
+                text-align: left;
+                padding-bottom: 5px;
+                @media screen and (min-width: 50em) {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+    // Development / Design Stack 
+    .col-development-stack,
+    .col-design-stack {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 8px;
+            li {
+                color: red;
+            }
+            @media screen and (min-width: 440px) {
+                grid-template-columns: repeat(3, 100px);
+            }
+
+            @media screen and (min-width: 50em) {
+                grid-template-columns: repeat(3, 80px);
+            }
+        }
+    }
+
+    // Technical Skills
+    .col-technical-skills {
+        hr {
+            padding: 1px;
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 50em) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //flex-wrap: wrap;
+        height: 60em;
+        padding: 40px;
+        
+
+    }
+}

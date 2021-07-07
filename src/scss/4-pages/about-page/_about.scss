@@ -1,0 +1,108 @@
+/*
+---------------------------------------------------------------
+* --- About Page Styling
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+.about {
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 1em;
+    // Global HR
+    hr {
+        border: 1px solid blue;
+        width: 50px;
+        height: 5px;
+        background: blue;
+        margin: 15px auto;
+    }
+
+    // My Summary
+    .my-summary {
+        @include col-center-items;
+
+        &__image {
+            padding: 20px;
+            img {
+                max-width: 300px;
+            }
+        }
+
+        // Text Content
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 550px;
+            padding: 20px;
+
+            .name {
+                font-size: 1.75em;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .headline {
+                //font-family: ;
+                font-size: 1em;
+                line-height: 1.5;
+                //font-style: italic;
+                text-align: center;
+            }
+
+            p {
+                margin: 0px 0px 15px 0px;
+                font-size: 0.89em;
+            }
+        }
+
+        @media screen and (min-width: 50em) {
+            &__text {
+                max-width: 800px;
+                p {
+                    font-size: 0.95em;
+                }
+            }
+
+            &__image img {
+                max-width: 330px;
+            }
+        }
+
+        @media screen and (min-width: 70em) {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            max-width: 1300px;
+            margin: auto;
+            height: 100vh;
+            padding-bottom: 10%;
+
+            .name, 
+            .headline {
+                text-align: left;
+            }
+
+            hr {
+                margin: 15px 0px;
+            }
+
+            &__image {
+                @include col-center-items;
+            }
+
+            &__text {
+                max-width: 800px;
+                .name {
+                    font-size: 3em;
+                }
+
+                p {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

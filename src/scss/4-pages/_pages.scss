@@ -6,7 +6,8 @@
 /*
    --- About Page
 */ 
-
+@import "./about-page/about";
+@import "./about-page/about-skills";
 
 /*
    --- Home Page
@@ -15,7 +16,6 @@
 @import "./home-page/project-summaries";
 // Splash Page
 @import "./home-page/splash";
-
 // Work Summary
 @import "./home-page/work-summary";
 
