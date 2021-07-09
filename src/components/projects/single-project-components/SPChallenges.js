@@ -7,12 +7,12 @@ General React Dependencies / Custom Imports & Components
 import React from "react";
 
 //--------------------------------------------------------------
-const SPChallenges = () => {
+const SPChallenges = ({ challenge }) => {
     return (
         <article className="single-project-component__challenges">
             <h3> What I found Challenging</h3>
             <hr />
-            <p> {} </p>
+            <p> {challenge} </p>
         </article>
     )
 }
