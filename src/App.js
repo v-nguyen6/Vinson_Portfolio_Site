@@ -62,11 +62,11 @@ function App() {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/about" component={About} />
-              <Route path="/filmdex-react-project" component={SingleMovieAppProject} />
-              <Route path="/etoile-wordpress-project" component={SingleCapstoneProject} />
+              <Route path="/filmdex-react-moviedatabase" component={SingleMovieAppProject} />
+              <Route path="/etoile-wordpress-capstone" component={SingleCapstoneProject} />
               <Route path="/portfolio-project-revised" component={SingleNewPortfolioProject} />
-              <Route path="/portfolio-project" component={SinglePortfolioProject} />
-              <Route path="/keep-it-cheesy-brochure-project" component={SingleBrochureProject} />
+              <Route path="/react-portfolio" component={SinglePortfolioProject} />
+              <Route path="/take-it-cheesy-brochure" component={SingleBrochureProject} />
               <Route path="*" component={Home} />
             </Switch>
           </main>

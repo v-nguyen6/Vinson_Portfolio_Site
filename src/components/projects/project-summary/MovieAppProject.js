@@ -54,7 +54,7 @@ const MovieAppProject = () => {
                 </p>
 
                 <div className="project-component__text-content__cta">
-                    <Link to={"/filmdex-movie-database-project"} className="cta-btn">
+                    <Link to={"/filmdex-react-moviedatabase"} className="cta-btn">
                         Learn More
                     </Link>
 

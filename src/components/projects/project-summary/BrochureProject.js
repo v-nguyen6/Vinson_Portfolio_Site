@@ -55,7 +55,7 @@ const BrochureProject = () => {
                 </p>
 
                 <div className="project-component__text-content__cta">
-                    <Link to={"/etoile-wordpress-capstone"} className="cta-btn">
+                    <Link to={"/take-it-cheesy-brochure"} className="cta-btn">
                         Learn More
                     </Link>
 

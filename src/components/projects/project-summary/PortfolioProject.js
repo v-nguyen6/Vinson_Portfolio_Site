@@ -53,7 +53,7 @@ const PortfolioProject = () => {
                 </p>
 
                 <div className="project-component__text-content__cta">
-                    <Link to={"/filmdex-movie-database-project"} className="cta-btn">
+                    <Link to={"/react-portfolio"} className="cta-btn">
                         Learn More
                     </Link>
 

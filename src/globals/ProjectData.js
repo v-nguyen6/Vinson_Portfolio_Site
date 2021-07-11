@@ -91,4 +91,4 @@ export const MY_PROJECTS = [
         github: "https://github.com/v-nguyen6/Javascript_Game_Assignment",
         liveSite: "https://dino-dash.vinsonnguyen.com/",        
     },
-], 
+];
