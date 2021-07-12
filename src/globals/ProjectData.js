@@ -5,7 +5,7 @@ export const MY_PROJECTS = [
         scope: 
             "Filmdex is a movie database app that allows users to search any movie and view it’s relevant information and even add favourite movies to be stored into the local storage. Filmdex was created using React Javascript Frameworks and was created with the collaborative effort of a 2-person team. The Movie Database API was used to gather all the data and information pertaining to the movies such as poster image, movie rating and other relevant movie information.",
         developmentTeam: "Vinson Nguyen, Mina Bui",
-        role: "Graphic Designer, UX/UI Designer, Full-Stack Developer",
+        role: ["Graphic Designer", "UX/UI Designer", "Full-Stack Developer"],
         tools: ["React", "Javascript", "HTML5", "CSS3", "Sass", "Github", "Adobe XD", "Adobe Illustator", "Adobe Photoshop"],
         colors: ["#3C3F58", "#3BBA9C", "#121627", "#A398B1", "#707793"],
         design: 

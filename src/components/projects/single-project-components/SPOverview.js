@@ -4,6 +4,7 @@ General React Dependencies / Custom Imports & Components
 ----------------------------------------------------------------
 */
 // React Dependencies
+import { getRoles } from "@testing-library/react";
 import React from "react";
 import { RiToolsLine } from "react-icons/ri";
 
@@ -20,21 +21,21 @@ const SPOverview = ( {
     duration,
 }) => {
     return (
-        <article className="single-project-component-overview">
+        <article className="single-project-component__overview">
             <img 
                 src={mobileBanner}
                 alt="Project Banner (mobile)"
-                className="single-project-component-overview--mobile-banner"
+                className="single-project-component__overview--mobile-banner"
             />
 
             <img
                 src={desktopBanner}
                 alt="Project Banner (desktop)"
-                className="single-project-component-overview--desktop-banner"
+                className="single-project-component__overview--desktop-banner"
             />
 
             {/* Start of Content Container */}
-            <section className="single-project-component-overview__content">
+            <section className="single-project-component__overview__content">
                 {/* Scope */}
                 <div className="scope">
                     <h2>Overview</h2>
@@ -51,7 +52,9 @@ const SPOverview = ( {
                 <div className="role">
                     <h2>Role</h2>
                     <ul>
-                        <li>{role}</li>
+                        {role.map((roles) => {
+                            return <li>{roles}</li>;
+                        })}
                     </ul>
                 </div>
 

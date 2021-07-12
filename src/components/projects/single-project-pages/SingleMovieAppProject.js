@@ -80,7 +80,7 @@ const SingleMovieAppProject = () => {
     AOS.init();
 
     return (
-        <section className="single-project-info">
+        <section className="single-project-component">
             {/* For SEO Meta Tags */}
             <Helmet>
                 <title>Vinson Nguyen - Filmdex</title>
