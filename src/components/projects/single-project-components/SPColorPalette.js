@@ -7,7 +7,7 @@ General React Dependencies / Custom Imports & Components
 import React from "react";
 
 //--------------------------------------------------------------
-const SPColorPalette = ({ col1, col2, col3, col4 }) => {
+const SPColorPalette = ({ col1, col2, col3, col4, col5}) => {
     return (
         <article className="single-project-component-colors">
             <h3
@@ -82,6 +82,20 @@ const SPColorPalette = ({ col1, col2, col3, col4 }) => {
                 >
                     <div className="color-swatch" style={{ background: `${col4}` }}></div>
                     <p>{col4}</p>
+                </div>
+
+                {/* Color 5 */}
+                <div
+                    className="color-item color-item-05"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-sine"
+                    data-aos-once="false"
+                    data-aos-duration="700"
+                    data-aos-delay="450"
+                    data-aos-anchor-placement="top-bottom"
+                >
+                    <div className="color-swatch" style={{ background: `${col5}` }}></div>
+                    <p>{col5}</p>
                 </div>
             </section>
         </article>
