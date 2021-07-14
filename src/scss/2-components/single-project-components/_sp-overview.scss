@@ -1,0 +1,132 @@
+/*
+---------------------------------------------------------------
+* --- Single Project - Overview Component Styling
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+.single-project-component__overview {
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    // Banner Images
+    &--mobile-banner {
+        //width: 80%;
+        max-width: 700px;
+        margin-bottom: 40px;
+    }
+    &--desktop-banner {
+        display: none;
+    }
+
+    @media screen and (min-width: 50em) {
+        &--mobile-banner {
+            display: none;
+        }
+
+        &--desktop-banner {
+            display: block;
+            width: 75%;
+            max-width: 900px;
+            margin-bottom: 75px;
+            margin-top: -60px;
+        }
+    }
+
+    // Content
+    &__content {
+        padding: 28px;
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // Overview Grid
+        .scope, 
+        .dev-team,
+        .role,
+        .tools,
+        .duration {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 400px;
+            @media screen and (min-width: 50em) {
+                margin: 0px;
+            }
+
+            h2 {
+                font-size: 1.25em;
+                margin-bottom: 10px;
+                color: red;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        // Grid Area for each component
+        .scope {
+            grid-area:scope;
+        }
+        .dev-team {
+            grid-area:devTeam;
+        }
+        .role {
+            grid-area:role;
+        }
+        .tools {
+            grid-area:tools;
+            @media screen and (min-width: 25em) {
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(3, 130px);
+                    grid-gap: 10px;
+                }
+            }
+        }
+
+        // Media Queries for Overview Grid
+        @media screen and (min-width: 50em) {
+            display: grid;
+            grid-template-areas:
+                "scope role"
+                "scope devTeam"
+                "tools duration";
+            grid-gap: 25px;
+
+            height: auto;
+            align-items: flex-start;
+            justify-items: center;
+            padding: 0px;
+            margin-bottom: 75px;
+            max-width: 800px;
+        }
+    }
+
+    // Call To Actions
+    &__cta {
+        width: 100%;
+        @include col-center-items;
+
+        a {
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        @media screen and (min-width: 550px) {
+            @include row-center-items;
+        }
+    }
+}

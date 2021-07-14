@@ -9,10 +9,12 @@ import React from "react";
 //--------------------------------------------------------------
 const SPChallenges = ({ challenge }) => {
     return (
-        <article className="single-project-component__challenges">
-            <h3> What I found Challenging</h3>
-            <hr />
-            <p> {challenge} </p>
+        <article className="single-project-component-challenges">
+            <section className="single-project-component-challenges__container">
+                <h3> What I found Challenging</h3>
+                <hr />
+                <p> {challenge} </p>
+            </section>    
         </article>
     )
 }

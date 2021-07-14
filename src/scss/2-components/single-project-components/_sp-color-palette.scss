@@ -1,0 +1,54 @@
+/*
+---------------------------------------------------------------
+* --- Single Project - Color Palette Component Styling
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+.single-project-component-colors {
+    padding: 20px;
+    width: 100%;
+    max-width: auto;
+    height: 500px;
+    @include col-center-items;
+
+    // Color Swatch/Grid
+    .color-items {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        @include row-center-items;
+
+        .color-item {
+            //margin-right: 15px;
+            padding: 10px;
+            .color-swatch {
+                width: 65px;
+                height: 65px;
+                background: red;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 0.75em;
+            }
+        }
+    }
+
+    @media screen and (min-width: 50em) {
+        @include col-center-items;
+        height: 40em;
+
+        .color-items {
+            width: 100%;
+            @include row-center-items;
+            .color-item {
+                margin: 25px;
+                .color-swatch {
+                    width: 125px;
+                    height: 125px;
+                }
+            }
+        }
+    }
+}

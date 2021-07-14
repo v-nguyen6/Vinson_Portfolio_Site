@@ -1,0 +1,24 @@
+/*
+---------------------------------------------------------------
+* --- Single Project - Coming Soon Component Styling
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+.single-project-component {
+    &__coming-soon {
+        height: 45em;
+        font-size: 1em;
+        @include col-center-items;
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        @media screen and (min-width: 50em) {
+            h3 {
+                font-size: 3em;
+            }
+        }
+    }
+}

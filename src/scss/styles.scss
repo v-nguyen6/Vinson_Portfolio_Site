@@ -5,32 +5,36 @@
 
 | ------ Table of Contents ------
 | 0. Abstracts/ 
-|   |- _variable.scss          # Sass Variables
-|   |- _mixins.scss            # Sass Mixins
+|   |- _variable.scss                 # Sass Variables
+|   |- _mixins.scss                   # Sass Mixins
 |
 | 1. Base/
-|   |- _base.scss              # All Element Selectors / Typography Styling
-|   |- _normalize.scss         # Normalize / Reset
+|   |- _base.scss                     # All Element Selectors / Typography Styling
+|   |- _normalize.scss                # Normalize / Reset
 |   
 | 2. Components/
-|   |- _components.scss        # Buttons / Links Styles
-|                              # Input Styles
-|                              # Widget Styles
+|   |- _components.scss               # Buttons / Links Styles
+|                                     # Input Styles
+|                                     # Widget Styles
+|   |- _sp-components.scss            # Styling for Individual Single Project Components
 |
 | 3. Layout/
-|   |- _footer.scss            # Footer
-|   |- _header.scss            # Header
-|   |- _navigation.scss        # Navigation
+|   |- _footer.scss                   # Footer
+|   |- _header.scss                   # Header
+|   |- _navigation.scss               # Navigation
 |
 | 4. Pages/
 |   |---> about-page
-|   |- _about.scss             # About Page Specific Styles
+|   |- _about.scss                    # About Page Specific Styles
 |
-|   |----> home-page
-|   |- _project-summaries.scss # Single Project Summaries (Home Page)
+|   |---> home-page
+|   |- _project-summaries.scss        # Single Project Summaries (Home Page)
 |
-|   |----> single-project-page
-|   |- _
+|   |---> single-project-page
+|   |- _single-project-brochure.scss  # Single Page - Brochure Project Styling
+|   |- _single-project-capstone.scss  # Single Page - Capstone Project Styling
+|   |- _single-project-movie-app.scss # Single Page - Movie App Project Styling
+|   |- _single-project-portfolio.scss # Single Page - Portfolio Project Styling
 |
 |
 |- styles.scss - (Main Sass File)

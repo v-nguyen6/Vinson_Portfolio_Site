@@ -1,0 +1,55 @@
+/*
+---------------------------------------------------------------
+* --- Single Project - Typography Component Styling
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+.single-project-component__typography {
+    padding: 28px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1em;
+    height: 450px;
+    
+    // Typography Container
+    @include col-center-items;
+    .typography-container {
+        @media screen and (min-width: 50em) {
+            // Grid Areas
+            .typeface {
+                max-width: 600px;
+                margin: 150px 0px;
+                padding-left: 15%;
+                .typeface-placeholder {
+                    font-size: 0.9em;
+                }
+            }
+        }
+
+        .typeface {
+            margin: 30px 0px;
+            // Aa - Sample
+            .typeface-sample {
+                font-size: 1.75em;
+                border: 1.25px solid white;
+                width: 50px;
+                height: 50px;
+                @include col-center-items;
+                margin-bottom: 10px;
+            }
+
+            // Typeface Name
+            .typeface-name {
+                font-size: 1.15em;
+                margin-bottom: 5px;
+            }
+
+            .typeface-placeholder {
+                font-size: 0.85em;
+            }
+        }
+    }
+}

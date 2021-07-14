@@ -1,0 +1,30 @@
+/*
+---------------------------------------------------------------
+* --- Single Project - Design Component Styling
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+.single-project-component-design {
+    width: 100%;
+    max-width: 950px;
+    @include row-center-items;
+    margin: auto;
+    height: 35em;
+
+    &__container {
+        padding: 28px;
+        max-width: 600px;
+        @media screen and (min-width: 50em) {
+            padding: 20px;
+            h3 {
+                font-size: 3em;
+            }
+        }
+    }
+
+    @media screen and (min-width: 50em) {
+        height: 600px;
+    }
+}

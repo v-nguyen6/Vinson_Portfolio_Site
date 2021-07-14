@@ -1,0 +1,154 @@
+/*
+---------------------------------------------------------------
+* --- Single Project Component Imports & General Styling
+---------------------------------------------------------------
+*/
+// ------------------------------------------------------------
+// -- * Individual Component Imports
+
+// -- * SPCallToAction
+@import "./single-project-components/sp-call-to-action";
+
+// -- * SPChallenges
+@import "./single-project-components/sp-challenges";
+
+// -- * SPColorPalette
+@import "./single-project-components/sp-color-palette";
+
+// -- * SPComingSoon
+@import "./single-project-components/sp-coming-soon";
+
+// -- * SPDesign
+@import "./single-project-components/sp-design";
+
+// -- * SPDevelopment
+@import "./single-project-components/sp-development";
+
+// -- * SPOverview
+@import "./single-project-components/sp-overview";
+
+// -- * SPTitle
+@import "./single-project-components/sp-title";
+
+// -- * SPTypography
+@import "./single-project-components/sp-typography";
+
+// ------------------------------------------------------------
+// -- * General Styling 
+
+// --- Imports
+@import "../0-abstracts/abstracts";
+
+.single-project-component {
+    height: auto;
+    color: white;
+
+    hr {
+        border: 1px solid red;
+        width: 50px;
+        height: 5px;
+        background: red;
+        margin: 15px 0px;
+    }
+}
+
+// ------------------------------------------------------------
+// -- * Gallery for Images in Single Project Pages
+// Design/Development Photos
+.single-project-component {
+    .design-gallery {
+        width: 90%;
+        margin: auto;
+        @include col-center-items;
+        img {
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+// Final Project Images - Desktop
+.final-project-gallery--desktop {
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Header 
+    h3 {
+        font-size: 2em;
+    }
+    
+    //Images
+    .desktop-gallery {
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 1000px;
+            //margin-bottom: 50px;
+            @include col-center-items;
+        }
+    }
+
+    @media screen and (min-width: 50em) {
+        @include col-center-items;
+    }
+}
+
+// Final Project Images - Mobile
+.final-project-gallery--mobile {
+    padding: 20px;
+    max-width: 825px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Header
+    h3 {
+        font-size: 2em;
+    }
+
+    @media screen and (min-width: 50em) {
+        max-width: 100%;
+        @include col-center-items;
+    }
+
+    .mobile-gallery {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            width: 100%;
+            //max-width: 100%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+
+        // Tablet Mode
+        @media screen and (min-width: 630px) {
+            display: grid;
+            grid-template-columns: repeat(2, 40%);
+            img {
+                height: 350px;
+                width: auto;
+            }
+        }
+
+        //Desktop Mode
+        @media screen and(min-width: 900px) {
+            grid-template-columns: repeat(4, 21.5%);
+            margin-left: -20px;
+            img {
+                height: 400px;
+                width: auto;
+            }
+        }
+    }
+}

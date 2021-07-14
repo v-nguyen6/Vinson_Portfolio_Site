@@ -1,0 +1,72 @@
+/*
+---------------------------------------------------------------
+* --- Single Project - Call To Action Component Styling
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+.single-project-component__navigate-projects {
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+
+    // User Interaction Styling
+    .go-back-home, 
+    .next-project {
+        width: 200px;
+        transition: all 0.4s ease-out;
+        border-style: none;
+        p {
+            font-size: 1em;
+        }
+
+        &:hover {
+            color: red;
+            background: none;
+        }
+    }
+
+    // Project CTA 
+    .project-cta {
+        @include col-center-items;
+        @media screen and (min-width: 50em) {
+            @include row-center-items;
+        }
+
+        a {
+            width: 175px;
+            margin: 10px;
+            padding: 15px;
+            @media screen and (min-width: 650px) {
+                margin: 5px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 650px) {
+        flex-direction: row;
+
+        // Back Home Button
+        .go-back-home {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+        }
+
+        // Next Project Button
+        .next-project {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}
