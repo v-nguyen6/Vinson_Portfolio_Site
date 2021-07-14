@@ -1,37 +1,8 @@
 /*
 ---------------------------------------------------------------
-* --- Single Project Component Imports & General Styling
+* --- Single Project Component General Styling & Imports
 ---------------------------------------------------------------
 */
-// ------------------------------------------------------------
-// -- * Individual Component Imports
-
-// -- * SPCallToAction
-@import "./single-project-components/sp-call-to-action";
-
-// -- * SPChallenges
-@import "./single-project-components/sp-challenges";
-
-// -- * SPColorPalette
-@import "./single-project-components/sp-color-palette";
-
-// -- * SPComingSoon
-@import "./single-project-components/sp-coming-soon";
-
-// -- * SPDesign
-@import "./single-project-components/sp-design";
-
-// -- * SPDevelopment
-@import "./single-project-components/sp-development";
-
-// -- * SPOverview
-@import "./single-project-components/sp-overview";
-
-// -- * SPTitle
-@import "./single-project-components/sp-title";
-
-// -- * SPTypography
-@import "./single-project-components/sp-typography";
 
 // ------------------------------------------------------------
 // -- * General Styling 
@@ -152,3 +123,33 @@
         }
     }
 }
+
+// ------------------------------------------------------------
+// -- * Individual Component Imports
+
+// -- * SPCallToAction
+@import "./single-project-components/sp-call-to-action";
+
+// -- * SPChallenges
+@import "./single-project-components/sp-challenges";
+
+// -- * SPColorPalette
+@import "./single-project-components/sp-color-palette";
+
+// -- * SPComingSoon
+@import "./single-project-components/sp-coming-soon";
+
+// -- * SPDesign
+@import "./single-project-components/sp-design";
+
+// -- * SPDevelopment
+@import "./single-project-components/sp-development";
+
+// -- * SPOverview
+@import "./single-project-components/sp-overview";
+
+// -- * SPTitle
+@import "./single-project-components/sp-title";
+
+// -- * SPTypography
+@import "./single-project-components/sp-typography";
