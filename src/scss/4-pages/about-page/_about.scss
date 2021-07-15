@@ -20,6 +20,7 @@
         margin: 15px auto;
     }
 
+
     // My Summary
     .my-summary {
         @include col-center-items;
@@ -59,6 +60,14 @@
             }
         }
 
+        // Resume Link
+        .about-resume-link {
+            width: 200px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+
         @media screen and (min-width: 50em) {
             &__text {
                 max-width: 800px;
@@ -70,6 +79,12 @@
             &__image img {
                 max-width: 330px;
             }
+
+            .about-resume-link {
+                width: 300px;
+            }
+
+            
         }
 
         @media screen and (min-width: 70em) {

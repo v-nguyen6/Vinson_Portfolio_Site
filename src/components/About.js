@@ -117,10 +117,24 @@ const About = () => {
                         As a front-end developer, I strive towards always being inspried to learn about new and upcoming technologies by developing my ideas
                         with like-minded individuals to create meaningful web applications and sites.
                     </p>
+
+                    <a
+                        className="about-resume-link"
+                        href="https://vinsonnguyen.com"
+                        title="Google Drive Link: Vinson's Web Dev Resume"
+                        target="_blank"
+                        rel="noreferrer"
+                        data-aos="fade-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-once="false"
+                        data-aos-duration="750"
+                    >
+                        Download Resume
+                    </a>
                 </div>
             </section>
 
-            {/* Technical Skills */}
+            {/* Skills */}
             <section className="about-item artillery">
                 {/* Development Stack */}
                 <div className="col-development-stack">

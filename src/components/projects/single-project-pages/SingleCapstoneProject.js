@@ -22,6 +22,7 @@ import SPDevelopment from "../single-project-components/SPDevelopment";
 import SPTitle from "../single-project-components/SPTitle";
 import SPTypography from "../single-project-components/SPTypography";
 import SPColorPalette from "../single-project-components/SPColorPalette";
+import SPChallenges from "../single-project-components/SPChallenges";
 import SPCallToAction from "../single-project-components/SPCallToAction";
 
 // Project Data
@@ -49,11 +50,29 @@ import MOU1 from "../../../assets/capstone/memo-of-understanding/memo-of-underst
 import MOU2 from "../../../assets/capstone/memo-of-understanding/memo-of-understanding-2.jpg"
 import MOU3 from "../../../assets/capstone/memo-of-understanding/memo-of-understanding-3.jpg"
 import MOU4 from "../../../assets/capstone/memo-of-understanding/memo-of-understanding-4.jpg"
-// - Content Plan
-// - Sitemap
-// - Wireframes
+// - Content Plan & Sitemap
+import contentPlan0 from "../../../assets/capstone/content-plan-site-map/content-plan-0.jpg";
+import contentPlan1 from "../../../assets/capstone/content-plan-site-map/content-plan-1.jpg";
+import siteMap1 from "../../../assets/capstone/content-plan-site-map/site-map-1.jpg";
+// - Wireframes - Desktop
+import wireframeDesktop1 from "../../../assets/capstone/wireframes/desktop/etoile-wireframes-desktop-homepage.jpg";
+import wireframeDesktop2 from "../../../assets/capstone/wireframes/desktop/etoile-wireframes-desktop-productspage.jpg";
+import wireframeDesktop3 from "../../../assets/capstone/wireframes/desktop/etoile-wireframes-desktop-singleproductpage.jpg";
+import wireframeDesktop4 from "../../../assets/capstone/wireframes/desktop/etoile-wireframes-desktop-aboutpage.jpg";
+import wireframeDesktop5 from "../../../assets/capstone/wireframes/desktop/etoile-wireframes-desktop-customerservice.jpg";
+import wireframeDesktop6 from "../../../assets/capstone/wireframes/desktop/etoile-wireframes-desktop-contactpage.jpg";
+// - Wireframes - Mobile
+import wireframeMobile1 from "../../../assets/capstone/wireframes/mobile/etoile-wireframes-mobile-homepage.jpg";
+import wireframeMobile2 from "../../../assets/capstone/wireframes/mobile/etoile-wireframes-mobile-productspage.jpg";
+import wireframeMobile3 from "../../../assets/capstone/wireframes/mobile/etoile-wireframes-mobile-singleproductpage.jpg";
+import wireframeMobile4 from "../../../assets/capstone/wireframes/mobile/etoile-wireframes-mobile-aboutpage.jpg";
+import wireframeMobile5 from "../../../assets/capstone/wireframes/mobile/etoile-wireframes-mobile-customerservice.jpg";
+import wireframeMobile6 from "../../../assets/capstone/wireframes/mobile/etoile-wireframes-mobile-contactpage.jpg";
 // - Mockups
-
+import mockup1 from "../../../assets/capstone/mockups/etoile-desktop-mockup.jpg";
+// - Site Logos
+import logo1 from "../../../assets/capstone/logos/logo-black.png"
+import logo2 from "../../../assets/capstone/logos/logo-blue.png"
 
 //--------------------------------------------------------------
 const SingleCapstoneProject = () => {
@@ -181,7 +200,7 @@ const SingleCapstoneProject = () => {
                         </div>
 
                         {/* Content Section Divider */}
-                        <div className="divider"></div>
+                        <div className="timeline-divider"></div>
 
                         {/* Pre-Development */}
                         <h3 className="process-heading">Pre-Development</h3>
@@ -250,32 +269,285 @@ const SingleCapstoneProject = () => {
                                     data-aos-anchor-placement="center-bottom"
                                 />
                             </div>
-
-                            <p className="document-link-text">
-                                A link to the full PDF of the document can be found here:
-                            </p>
-                            <a 
-                                className="document-link-button" 
-                                href="https://vinsonnguyen.com" 
-                                title="Google Drive Link: Memo of Understanding" 
-                                target="_blank" 
-                                rel="noreferrer"
-                            >
-                                Memo of Understanding
-                            </a>
+                            <div className="document-external-link">
+                                <p className="document-external-link__text">
+                                    A link to the full PDF of the document can be found here:
+                                </p>
+                                <a 
+                                    className="document-external-link__button" 
+                                    href="https://vinsonnguyen.com" 
+                                    title="Google Drive Link: Memo of Understanding" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    Memo of Understanding
+                                </a>
+                            </div>
                         </div>
 
-                    </article>
+                        {/* Content Plan & Site Map */}
+                        <div className="process-item content-plan-site-map">
+                            <h4>Content Plan & Site Map</h4>
+                            <p className="excerpt">
+                                After agreeing on what direction we wanted to take the site as a team, in terms of styles and content, we began 
+                                compiling all of the essential information into a concrete and structured Content Plan. This part of the stage was essential
+                                in making sure that the overall structure of the site would be able to accomodate everything that was discussed and outlined
+                                within the Memo of Understanding. Next, a detailed site map was created which visually showed the overall layout and markup that
+                                would be used for the site. This part of the stage was important to highlight the heirarchy of the site while understanding how the user
+                                would be able to move and traverse through the site. During this process, it was important for us to keep in mind the usability of the
+                                site while making sure the user would be able to easily go back and forth between pages without feeling lost and or overwhelmed at a
+                                specific page. {" "}
+                                <span>(Click the images below to get a better view of the document)</span>
+                            </p>
 
+                            <div className="content-plan-site-map__gallery">
+                                <img
+                                    src={contentPlan0}
+                                    alt="Content Plan Document - Cover Sheet"
+                                    width="250"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img
+                                    src={contentPlan1}
+                                    alt="Content Plan Document"
+                                    width="250"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img
+                                    src={siteMap1}
+                                    alt="Site Map Document"
+                                    width="250"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                            </div>
+                            
+                            <div className="document-external-link">
+                                <p className="document-external-link__text">
+                                    A link to the full PDF of the document can be found here:
+                                </p>
+                                <a 
+                                    className="document-external-link__button" 
+                                    href="https://vinsonnguyen.com" 
+                                    title="Google Drive Link: Content Plan & Site Map" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    Content Plan & Site Map
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Content Section Divider */}
+                        <div className="timeline-divider"></div>
+
+                        {/* Design Summary */}
+                        <SPDesign text={MY_PROJECTS[1].design} />
+
+                        {/* Wireframes - Desktop */}
+                        <div className="process-item wireframes-desktop">
+                            <h3 className="process-heading">Wireframes - Desktop</h3>
+                            <img
+                                src={wireframeDesktop1}
+                                alt="Etoile Wireframes - Desktop - Home Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeDesktop2}
+                                alt="Etoile Wireframes - Desktop - Products Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeDesktop3}
+                                alt="Etoile Wireframes - Desktop - Single Product Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeDesktop4}
+                                alt="Etoile Wireframes - Desktop - About Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeDesktop5}
+                                alt="Etoile Wireframes - Desktop - Customer Service Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeDesktop6}
+                                alt="Etoile Wireframes - Desktop - Contact Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                        </div>
+
+                        {/* Wireframes - Mobile */}
+                        <div className="process-item wireframes-mobile">
+                            <h3 className="process-heading">Wireframes - Mobile</h3>
+                            <img
+                                src={wireframeMobile1}
+                                alt="Etoile Wireframes - Mobile - Home Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeMobile2}
+                                alt="Etoile Wireframes - Mobile - Products Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeMobile3}
+                                alt="Etoile Wireframes - Mobile - Single Product Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeMobile4}
+                                alt="Etoile Wireframes - Mobile - About Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeMobile5}
+                                alt="Etoile Wireframes - Mobile - Customer Service Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeMobile6}
+                                alt="Etoile Wireframes - Mobile - Contact Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                        </div>
+
+                        {/* High Fidelty Mockup */}
+                        <div className="process-item mockup">
+                            <h3 className="process-heading">High Fidelity Mockup</h3>
+                            <img
+                                src={mockup1}
+                                alt="Etoile High Fidelity Mockup - Desktop - Home Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="center-bottom"
+                            />
+                        </div>
+
+                        {/* Content Section Divider */}
+                        <div className="timeline-divider"></div>
+
+                        {/* Color Palette */}
+                        <SPColorPalette
+                            col1={MY_PROJECTS[1].colors[0]}
+                            col2={MY_PROJECTS[1].colors[1]}
+                            col3={MY_PROJECTS[1].colors[2]}
+                            col4={MY_PROJECTS[1].colors[3]}
+                            col5={MY_PROJECTS[1].colors[4]}
+                        />
+
+                        {/* Typography */}
+                        <SPTypography 
+                            f1="Arial, sans-serif"
+                            f2="Montserrat, sans-serif"
+                            fam1="Montserrat, sans-serif"
+                            fam2="Arial, sans-serif"
+                        />
+
+                        {/* Logo */}
+                        <div className="etoile-logo">
+                            <h3>Logo</h3>
+                            <hr />
+                            <div className="logo-items">
+                                <img
+                                    src={logo1}
+                                    width="250"
+                                    loading="lazy"
+                                    data-aos="fade-right"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="top-center"
+                                />
+                                <img
+                                    src={logo2}
+                                    width="250"
+                                    loading="lazy"
+                                    data-aos="fade-left"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="top-center"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Content Section Divider */}
+                        <div className="timeline-divider"></div>
+
+                        {/* Development Summary */}
+                        <SPDevelopment text={MY_PROJECTS[1].development} />
+                    </article>
                 </SRLWrapper>
 
-
-
-
-
-
-
-
+                {/* Call To Action Buttons */}
+                <SPCallToAction 
+                    home="/"
+                    nextProject="/react-portfolio"
+                    livesite={MY_PROJECTS[1].liveSite}
+                    github={MY_PROJECTS[2].github}
+                />
             </SimpleReactLightbox>
         </section>
     )

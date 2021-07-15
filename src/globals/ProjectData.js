@@ -26,7 +26,7 @@ export const MY_PROJECTS = [
         developmentTeam: "Vinson Nguyen, Mina Bui, Janice Lin",
         role: ["Graphic Designer", "UX/UI Designer", "Information Architecture", "Developer", "Content and Assets Management"],
         tools : ["Wordpress", "PHP", "MySQL", "HTML5", "CSS3", "Sass", "Javascript", "Gulp", "Github", "Figma", "Abode Illustrator", "Adobe Photoshop"],
-        colors: ["#000000", "#FFFFFF", "#FBFBFB", "#3E3B39"],
+        colors: ["#05090F", "#FFFFFF", "#BFBEBD", "#3E3B39", "#618594"],
         design: 
             "The main goal of Etoile was to create a brand that represented all the elements that each team member loved from a clothing brand and or store and melded it into one. This direction made Etoile focus on becoming a brand that was high-end yet casual with a hint of trendy street wear inspiration. This lead to us to designing a site that focussed on showcasing the products while maintaining a simple yet elegant and minimal layout.",
         development: 
