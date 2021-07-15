@@ -1,7 +1,7 @@
 export const MY_PROJECTS = [
     {
         title: "Filmdex",
-        tagline: "Browse the latest movies and add them to your favourites.",
+        tagline: "Browse the latest movies and add your favourite movies to a list.",
         scope: 
             "Filmdex is a movie database app that allows users to search any movie and view it’s relevant information and even add favourite movies to be stored into the local storage. Filmdex was created using React Javascript Frameworks and was created with the collaborative effort of a 2-person team. The Movie Database API was used to gather all the data and information pertaining to the movies such as poster image, movie rating and other relevant movie information.",
         developmentTeam: "Vinson Nguyen, Mina Bui",
@@ -24,7 +24,7 @@ export const MY_PROJECTS = [
         scope:
             "Etoile is an ecommerce site that sells custom designed clothing that allows consumers to have the ability to upload their own design for production. The site was based upon and built using WordPress and Woocommerce. We created basic pages using the backend of WordPress and used PHP with WordPress specific functions to build custom post types. We also used plugins such as Advanced Custom Fields to add further functionality to the site. The Woocommerce aspect of the site was used to create the overall feel of a real ecommerce site which allowed users to add products to cart as well as go through the entire ordering and payment process.",
         developmentTeam: "Vinson Nguyen, Mina Bui, Janice Lin",
-        role: "Graphic Designer, UX/UI Designer, Information Architecture, Developer, Content and Asstes Management",
+        role: ["Graphic Designer", "UX/UI Designer", "Information Architecture", "Developer", "Content and Assets Management"],
         tools : ["Wordpress", "PHP", "MySQL", "HTML5", "CSS3", "Sass", "Javascript", "Gulp", "Github", "Figma", "Abode Illustrator", "Adobe Photoshop"],
         colors: ["#000000", "#FFFFFF", "#FBFBFB", "#3E3B39"],
         design: 
@@ -41,7 +41,7 @@ export const MY_PROJECTS = [
         scope:
             "The goal of the portfolio site was to create a clean, simple and user-friendly website that includes unique elements and dynamic animations, while having a consistent layout and style throughout. This project includes most of the skills I have gained so far during my tenure withing the TWD program, that in turn would be showcasing the previous web development projects that I have worked on.",
         developmentTeam: "Vinson Nguyen",
-        role: "Graphic Designer, UX/UI Design, Content Strategy, Front-End Development",
+        role: ["Graphic Designer", "UX/UI Design", "Content Strategy", "Front-End Development"],
         tools: ["React", "Javascript", "HTML5", "CSS3", "Sass", "Github", "Adobe XD", "Adobe Illustator", "Adobe Photoshop"],
         colors: ["#FEFEFE", "#6532E6", "#1DB096", "#333646", "#242733"],
         design: 
@@ -60,7 +60,7 @@ export const MY_PROJECTS = [
         scope: 
             "The goal of the site was to create a professionally presented brochure site using HTML, CSS and Javascript. The site focussed on showcasing the production process and product selection of various gourmet cheeses. Ontop of that the inclusion of various functionality aspects pushed us to allow the ability for users to be able to send inquiries and custom orders using a contact form.",
         developmentTeam: "Vinson Nguyen, Mina Bui, Olivia Feilden",
-        role: "Graphic Designer, Wireframes, Content Creation, Front-End Developer",
+        role: ["Graphic Designer", "Wireframes", "Content Creation", "Front-End Developer"],
         tools: ["HTML5", "CSS3", "Sass", "Javascript", "Github", "Adobe Illustrator", "Adobe Photoshop"],
         colors: ["#EFEFEF", "#363636", "#F2BE7E", "#734C36", "#C6641A"],
         design:
@@ -79,7 +79,7 @@ export const MY_PROJECTS = [
         scope:
             "The goal of the project was to implement a game that utilised javascript and allowed for users to able to interact with the game using keyboard inputs. The goal is to survive in the forest as long as you can while avoiding obstacles, using the arrow keys.",
         developmentTeam: "Vinson Nguyen, Mina Bui",
-        role: "Graphic Designer, Character Development, Content Asset Creation, Front-End Developer",
+        role: ["Graphic Designer", "Character Development", "Content Asset Creation", "Front-End Developer"],
         tools: ["Javascript", "HTML5", "CSS3", "Sass", "Adobe Illustrator"],
         colors: ["#282830", "#FFFFFF", "#BD5938"],
         design:

@@ -28,20 +28,21 @@ import SPCallToAction from "../single-project-components/SPCallToAction";
 import { MY_PROJECTS } from "../../../globals/ProjectData";
 
 // Assets
-// - Project Images
+// --- Project Images ---
+// - Banner Images
 import desktopBanner from "../../../assets/movie-app/banner/filmdex-desktop-banner.png";
 import mobileBanner from "../../../assets/movie-app/banner/filmdex-mobile-banner.png";
-
+// - Project Mockups
 import movieMockup1 from "../../../assets/movie-app/mockups/movie-app-mockups-home.jpg";
 import movieMockup2 from "../../../assets/movie-app/mockups/movie-app-mockups-single.jpg";
 import movieMockup3 from "../../../assets/movie-app/mockups/movie-app-mockups-favourites.jpg";
 import movieMockup4 from "../../../assets/movie-app/mockups/movie-app-mockups-about.jpg";
-
+// - Live Site - Desktop Images
 import movieDesktop1 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-search.png";
 import movieDesktop2 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-single.png";
 import movieDesktop3 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-favourite.png";
 import movieDesktop4 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-about.png";
-
+// - Live Site - Mobile Images
 import movieMobile1 from "../../../assets/movie-app/mobile/filmdex-mobile-screenshot-search.png";
 import movieMobile2 from "../../../assets/movie-app/mobile/filmdex-mobile-screenshot-single.png";
 import movieMobile3 from "../../../assets/movie-app/mobile/filmdex-mobile-screenshot-favourite.png";
@@ -83,7 +84,7 @@ const SingleMovieAppProject = () => {
         <section className="single-project-component">
             {/* For SEO Meta Tags */}
             <Helmet>
-                <title>Vinson Nguyen - Filmdex</title>
+                <title>Filmdex - Vinson Nguyen</title>
                 <meta 
                     name="description"
                     content="A movie database app that allows users to search movies, gather information and add favourite movies. Developed using React to create a dynamic site that also utilizes the API from The Movie Database (TMDb)."
