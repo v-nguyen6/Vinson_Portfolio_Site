@@ -23,7 +23,7 @@ import Home from "./components/Home";
 import SingleBrochureProject from "./components/projects/single-project-pages/SingleBrochureProject";
 import SingleCapstoneProject from "./components/projects/single-project-pages/SingleCapstoneProject";
 import SingleMovieAppProject from "./components/projects/single-project-pages/SingleMovieAppProject";
-import SingleNewPortfolioProject from "./components/projects/single-project-pages/SingleNewPortfolioProject";
+import SingleDinoDashGame from "./components/projects/single-project-pages/SingleDinoDashGame";
 import SinglePortfolioProject from "./components/projects/single-project-pages/SinglePortfolioProject";
 
 // Widgets
@@ -64,9 +64,9 @@ function App() {
               <Route path="/about" component={About} />
               <Route path="/filmdex-react-moviedatabase" component={SingleMovieAppProject} />
               <Route path="/etoile-wordpress-capstone" component={SingleCapstoneProject} />
-              <Route path="/portfolio-project-revised" component={SingleNewPortfolioProject} />
               <Route path="/react-portfolio" component={SinglePortfolioProject} />
               <Route path="/take-it-cheesy-brochure" component={SingleBrochureProject} />
+              <Route path="/dino-dash-game" component={SingleDinoDashGame} />
               <Route path="*" component={Home} />
             </Switch>
           </main>

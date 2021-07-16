@@ -8,11 +8,8 @@ import React from "react";
 
 
 //--------------------------------------------------------------
-const NewPortfolioProject = () => {
-    return (
-        <h1>Das it mane - newportfolioproject.js</h1>
-    );
+const SingleDinoDashGame = () => {
  
 }
 
-export default NewPortfolioProject;
+export default SingleDinoDashGame;

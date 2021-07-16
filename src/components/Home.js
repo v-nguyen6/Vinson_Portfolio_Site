@@ -14,7 +14,7 @@ import WorkSummary from "./projects/WorkSummary";
 import BrochureProject from "./projects/project-summary/BrochureProject";
 import CapstoneProject from "./projects/project-summary/CapstoneProject";
 import MovieAppProject from "./projects/project-summary/MovieAppProject";
-//import NewPortfolioProject from "./projects/project-summary/NewPortfolioProject";
+import SingleDinoDashGame from "./projects/project-summary/DinoDashGame";
 import PortfolioProject from "./projects/project-summary/PortfolioProject";
 
 //--------------------------------------------------------------
@@ -48,6 +48,7 @@ const Home = () => {
             <CapstoneProject />
             <PortfolioProject />
             <BrochureProject />
+            <DinoDashGame />
         </React.Fragment>
     );
 }
