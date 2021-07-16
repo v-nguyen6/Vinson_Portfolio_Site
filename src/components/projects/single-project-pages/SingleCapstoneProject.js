@@ -31,11 +31,16 @@ import { MY_PROJECTS } from "../../../globals/ProjectData";
 // - Banner Images
 import desktopBanner from "../../../assets/capstone/banner/etoile-desktop-banner.png";
 import mobileBanner from "../../../assets/capstone/banner/etoile-mobile-banner.png";
-
-// - Live Site - Desktop Images
-
 // - Live Site - Mobile Images
-
+import etoileMobile1 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-about.png";
+import etoileMobile2 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-single-product.png";
+import etoileMobile3 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-products.png";
+import etoileMobile4 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-customer-service.png";
+// - Live Site - Desktop Images
+import etoileDesktop1 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-home.png";
+import etoileDesktop2 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-single-product.png";
+import etoileDesktop3 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-products.png";
+import etoileDesktop4 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-about.png";
 // --- Development Assets ---
 // - Inspiration Screenshots
 import Inspo1 from "../../../assets/capstone/inspiration/etoile-inspo-1.jpg";
@@ -71,16 +76,6 @@ import mockup1 from "../../../assets/capstone/mockups/etoile-desktop-mockup.jpg"
 // - Site Logos
 import logo1 from "../../../assets/capstone/logos/logo-black.png";
 import logo2 from "../../../assets/capstone/logos/logo-blue.png";
-// - Live Site - Mobile Images
-import etoileMobile1 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-about.png";
-import etoileMobile2 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-single-product.png";
-import etoileMobile3 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-products.png";
-import etoileMobile4 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-customer-service.png";
-// - Live Site - Desktop Images
-import etoileDesktop1 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-home.png";
-import etoileDesktop2 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-single-product.png";
-import etoileDesktop3 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-products.png";
-import etoileDesktop4 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-about.png";
 
 //--------------------------------------------------------------
 const SingleCapstoneProject = () => {
