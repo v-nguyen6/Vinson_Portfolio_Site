@@ -37,16 +37,17 @@ import movieMockup1 from "../../../assets/movie-app/mockups/movie-app-mockups-ho
 import movieMockup2 from "../../../assets/movie-app/mockups/movie-app-mockups-single.jpg";
 import movieMockup3 from "../../../assets/movie-app/mockups/movie-app-mockups-favourites.jpg";
 import movieMockup4 from "../../../assets/movie-app/mockups/movie-app-mockups-about.jpg";
-// - Live Site - Desktop Images
-import movieDesktop1 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-search.png";
-import movieDesktop2 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-single.png";
-import movieDesktop3 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-favourite.png";
-import movieDesktop4 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-about.png";
 // - Live Site - Mobile Images
 import movieMobile1 from "../../../assets/movie-app/mobile/filmdex-mobile-screenshot-search.png";
 import movieMobile2 from "../../../assets/movie-app/mobile/filmdex-mobile-screenshot-single.png";
 import movieMobile3 from "../../../assets/movie-app/mobile/filmdex-mobile-screenshot-favourite.png";
 import movieMobile4 from "../../../assets/movie-app/mobile/filmdex-mobile-screenshot-about.png";
+// - Live Site - Desktop Images
+import movieDesktop1 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-search.png";
+import movieDesktop2 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-single.png";
+import movieDesktop3 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-favourite.png";
+import movieDesktop4 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-about.png";
+
 
 //--------------------------------------------------------------
 const SingleMovieAppProject = () => {
@@ -174,8 +175,54 @@ const SingleMovieAppProject = () => {
                     {/* Development Summary */}
                     <SPDevelopment text={MY_PROJECTS[0].development} />
 
+                    {/* Code Snippet */}
+
                     {/* Project Images */}
-                    <article className="final-project-gallery--desktop">
+                    <article
+                        className="final-project-gallery--mobile"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                    >
+                        <h2>Site Screenshots</h2>
+                        <h3>Mobile</h3>
+                        <hr />
+                        <div className="mobile-gallery">
+                            <img 
+                                src={movieMobile1}
+                                alt="Filmdex - Live Site - Search Page"
+                                width="350"
+                                loading="lazy"
+                            />
+                            <img 
+                                src={movieMobile2}
+                                alt="Filmdex - Live Site - Single Movie Page"
+                                width="350"
+                                loading="lazy"
+                            />
+                            <img 
+                                src={movieMobile3}
+                                alt="Filmdex - Live Site - Favourite Movies Page"
+                                width="350"
+                                loading="lazy"
+                            />
+                            <img 
+                                src={movieMobile4}
+                                alt="Filmdex - Live Site - About Page"
+                                width="350"
+                                loading="lazy"
+                            />
+                        </div>
+                    </article>
+
+                    <article 
+                        className="final-project-gallery--desktop"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                    >
                         <h3>Desktop</h3>
                         <hr />
                         <div className="desktop-gallery">
@@ -222,47 +269,8 @@ const SingleMovieAppProject = () => {
                         </div>
                     </article>
 
-                    <article
-                        className="final-project-gallery--mobile"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center"
-                    >
-                        <h3>Mobile</h3>
-                        <hr />
-                        <div className="mobile-gallery">
-                            <img 
-                                src={movieMobile1}
-                                alt="Filmdex - Live Site - Search Page"
-                                width="350"
-                                loading="lazy"
-                            />
-                            <img 
-                                src={movieMobile2}
-                                alt="Filmdex - Live Site - Single Movie Page"
-                                width="350"
-                                loading="lazy"
-                            />
-                            <img 
-                                src={movieMobile3}
-                                alt="Filmdex - Live Site - Favourite Movies Page"
-                                width="350"
-                                loading="lazy"
-                            />
-                            <img 
-                                src={movieMobile4}
-                                alt="Filmdex - Live Site - About Page"
-                                width="350"
-                                loading="lazy"
-                            />
-                        </div>
-                    </article>
-
                     {/* Challenges */}
                     <SPChallenges challenge={MY_PROJECTS[0].challenge} />
-
-                    {/* Code Snippet */}
                 </SRLWrapper>
 
                 {/* Call To Action Buttons */}

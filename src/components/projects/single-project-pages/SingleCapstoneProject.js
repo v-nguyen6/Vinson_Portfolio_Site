@@ -16,13 +16,11 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
 // Single Project Components
 import SPOverview from "../single-project-components/SPOverview";
-
 import SPDesign from "../single-project-components/SPDesign";
 import SPDevelopment from "../single-project-components/SPDevelopment";
 import SPTitle from "../single-project-components/SPTitle";
 import SPTypography from "../single-project-components/SPTypography";
 import SPColorPalette from "../single-project-components/SPColorPalette";
-import SPChallenges from "../single-project-components/SPChallenges";
 import SPCallToAction from "../single-project-components/SPCallToAction";
 
 // Project Data
@@ -71,8 +69,18 @@ import wireframeMobile6 from "../../../assets/capstone/wireframes/mobile/etoile-
 // - Mockups
 import mockup1 from "../../../assets/capstone/mockups/etoile-desktop-mockup.jpg";
 // - Site Logos
-import logo1 from "../../../assets/capstone/logos/logo-black.png"
-import logo2 from "../../../assets/capstone/logos/logo-blue.png"
+import logo1 from "../../../assets/capstone/logos/logo-black.png";
+import logo2 from "../../../assets/capstone/logos/logo-blue.png";
+// - Live Site - Mobile Images
+import etoileMobile1 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-about.png";
+import etoileMobile2 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-single-product.png";
+import etoileMobile3 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-products.png";
+import etoileMobile4 from "../../../assets/capstone/mobile/etoile-mobile-screenshot-customer-service.png";
+// - Live Site - Desktop Images
+import etoileDesktop1 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-home.png";
+import etoileDesktop2 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-single-product.png";
+import etoileDesktop3 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-products.png";
+import etoileDesktop4 from "../../../assets/capstone/desktop/etoile-desktop-screenshot-about.png";
 
 //--------------------------------------------------------------
 const SingleCapstoneProject = () => {
@@ -538,6 +546,98 @@ const SingleCapstoneProject = () => {
 
                         {/* Development Summary */}
                         <SPDevelopment text={MY_PROJECTS[1].development} />
+
+                        {/* Project Images */}
+                        <article
+                            className="final-project-gallery--mobile"
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-quart"
+                            data-aos-once="false"
+                            data-aos-anchor-placement="top-center"
+                        >
+                            <h2>Site Screenshots</h2>
+                            <h3>Mobile</h3>
+                            <hr />
+                            <div className="mobile-gallery">
+                                <img 
+                                    src={etoileMobile1}
+                                    alt="Etoile - Live Site - About Page"
+                                    width="350"
+                                    loading="lazy"
+                                />
+                                <img 
+                                    src={etoileMobile2}
+                                    alt="Etoile - Live Site - Single Product Page"
+                                    width="350"
+                                    loading="lazy"
+                                />
+                                <img 
+                                    src={etoileMobile3}
+                                    alt="Etoile - Live Site - Product Collections Page"
+                                    width="350"
+                                    loading="lazy"
+                                />
+                                <img 
+                                    src={etoileMobile4}
+                                    alt="Etoile - Live Site - Customer Service Page"
+                                    width="350"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </article>
+
+                        <article 
+                            className="final-project-gallery--desktop"
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-quart"
+                            data-aos-once="false"
+                            data-aos-anchor-placement="top-center"
+                        >
+                            <h3>Desktop</h3>
+                            <hr />
+                            <div className="desktop-gallery">
+                                <img 
+                                    src={etoileDesktop1}
+                                    alt="Etoile - Live Site - Home Page"
+                                    width="150"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img 
+                                    src={etoileDesktop2}
+                                    alt="Etoile - Live Site - Single Product Page"
+                                    width="150"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img 
+                                    src={etoileDesktop3}
+                                    alt="Etoile - Live Site - Product Collections Page"
+                                    width="150"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img 
+                                    src={etoileDesktop4}
+                                    alt="Etoile - Live Site - About Page"
+                                    width="150"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                            </div>
+                        </article>
                     </article>
                 </SRLWrapper>
 
