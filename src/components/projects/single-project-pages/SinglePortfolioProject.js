@@ -334,13 +334,12 @@ const SinglePortfolioProject = () => {
                 {/* Call To Action Buttons */}
                 <SPCallToAction 
                     home="/"
-                    nextProject="/react-portfolio"
+                    nextProject="/take-it-cheesy-brochure"
                     livesite={MY_PROJECTS[2].liveSite}
                     github={MY_PROJECTS[2].github}
                 />
             </SimpleReactLightbox>
         </section>
-
     )
 }
 

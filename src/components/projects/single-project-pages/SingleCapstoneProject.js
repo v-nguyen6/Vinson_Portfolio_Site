@@ -646,7 +646,6 @@ const SingleCapstoneProject = () => {
             </SimpleReactLightbox>
         </section>
     )
- 
 }
 
 export default SingleCapstoneProject;

@@ -53,7 +53,259 @@ import wireframe3 from "../../../assets/brochure/wireframes/brochure-wireframe-p
 
 //--------------------------------------------------------------
 const SingleBrochureProject = () => {
- 
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+
+    // Options and Customization for Lightbox
+    const options = {
+        settings: {
+            overlayColor: "black",
+            lightboxTransitionSpeed: 0.1,
+        },
+
+        caption: {
+            captionColor: "blue",
+        },
+
+        buttons: {
+            showAutoplayButton: false,
+            showCloseButton: true, 
+            showDownloadButton: false,
+            showFullscreenButton: false, 
+            showNextButton: true, 
+            showPrevButton: true, 
+            showThumbnailsButton: false, 
+            size: "40px",
+        },
+    }
+
+    // Initialize AOS Plugin
+    AOS.init();
+
+    return (
+        <section className="single-project-component">
+            <Helmet>
+                <title>Take It Cheesy - Vinson Nguyen</title>
+                <meta 
+                    name="description"
+                    content="A fictional gourmet cheese brochure site created using JavaScript, CSS/Sass and HTML."
+                />
+            </Helmet>
+
+            <SimpleReactLightbox>
+                {/* Title & Tagline */}
+                <SPTitle title={MY_PROJECTS[3].title} tagline={MY_PROJECTS[3].tagline} />
+
+                {/* Overview */}
+                <SPOverview 
+                    scope={MY_PROJECTS[3].scope}
+                    devTeam={MY_PROJECTS[3].developmentTeam}
+                    role={MY_PROJECTS[3].role}
+                    tools={MY_PROJECTS[3].tools}
+                    githubLink={MY_PROJECTS[3].github}
+                    livesiteLink={MY_PROJECTS[3].liveSite}
+                    mobileBanner={mobileBanner}
+                    desktopBanner={desktopBanner}
+                    duration={"3 Weeks"}
+                />
+
+                {/* Design Summary */}
+                <SPDesign text={MY_PROJECTS[3].design} />
+
+                <SRLWrapper options={options}>
+                <article className="single-project-component__process">
+                    {/* Wireframes */}
+                    <div className="process-item wireframes-desktop">
+                        <h3 className="process-heading">Wireframes</h3>
+                        <img
+                            src={wireframe1}
+                            alt="Take It Cheesy - Wireframes - Home Page"
+                            loading="lazy"
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-quart"
+                            data-aos-once="false"
+                            //data-aos-anchor-placement="center-bottom"
+                        />
+                        <img
+                            src={wireframe2}
+                            alt="Take It Cheesy - Wireframes - Process Page"
+                            loading="lazy"
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-quart"
+                            data-aos-once="false"
+                            //data-aos-anchor-placement="center-bottom"
+                        />
+                        <img
+                            src={wireframe3}
+                            alt="Take It Cheesy - Wireframes - Process Page"
+                            loading="lazy"
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-quart"
+                            data-aos-once="false"
+                            //data-aos-anchor-placement="center-bottom"
+                        />
+                    </div>
+
+                    {/* Content Section Divider */}
+                    <div className="timeline-divider"></div>
+
+                    {/* Color Palette */}
+                    <SPColorPalette 
+                        col1={MY_PROJECTS[3].colors[0]}
+                        col2={MY_PROJECTS[3].colors[1]}
+                        col3={MY_PROJECTS[3].colors[2]}
+                        col4={MY_PROJECTS[3].colors[3]}
+                        col5={MY_PROJECTS[3].colors[4]}
+                    />
+
+                    {/* Typography */}
+                    <SPTypography 
+                        f1="Arial, sans-serif"
+                        f2="Montserrat, sans-serif"
+                        fam1="Montserrat, sans-serif"
+                        fam2="Arial, sans-serif"
+                    />
+
+                    {/* Logo */}
+                    <div className="brochure-logo">
+                        <h3>Logo</h3>
+                        <hr />
+                        <div className="logo-items">
+                            <img
+                                src={logo1}
+                                width="250"
+                                loading="lazy"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="top-center"
+                            />
+                            <img
+                                src={logo2}
+                                width="250"
+                                loading="lazy"
+                                data-aos="fade-left"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="top-center"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Content Section Divider */}
+                    <div className="timeline-divider"></div>
+
+                    {/* Development Summary */}
+                    <SPDevelopment text={MY_PROJECTS[3].development} />
+
+                    {/* Project Images */}
+                    <article
+                        className="final-project-gallery--mobile"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                    >
+                        <h2>Site Screenshots</h2>
+                        <h3>Mobile</h3>
+                        <hr />
+                        <div className="mobile-gallery">
+                            <img 
+                                src={brochureMobile1}
+                                alt="Take It Cheesy - Live Site - Home Page"
+                                width="350"
+                                loading="lazy"
+                            />
+                            <img 
+                                src={brochureMobile2}
+                                alt="Take It Cheesy - Live Site - About Page"
+                                width="350"
+                                loading="lazy"
+                            />
+                            <img 
+                                src={brochureMobile3}
+                                alt="Take It Cheesy - Live Site - Process Page"
+                                width="350"
+                                loading="lazy"
+                            />
+                            <img 
+                                src={brochureMobile4}
+                                alt="Take It Cheesy - Live Site - Contact Page"
+                                width="350"
+                                loading="lazy"
+                            />
+                        </div>
+                    </article>
+
+                    <article 
+                        className="final-project-gallery--desktop"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                    >
+                        <h3>Desktop</h3>
+                        <hr />
+                        <div className="desktop-gallery">
+                            <img 
+                                src={brochureDesktop1}
+                                alt="Take It Cheesy - Live Site - Home Page"
+                                width="150"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="center-bottom"
+                            />
+                            <img 
+                                src={brochureDesktop2}
+                                alt="Take It Cheesy - Live Site - About Page"
+                                width="150"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="center-bottom"
+                            />
+                            <img 
+                                src={brochureDesktop3}
+                                alt="Take It Cheesy - Live Site - Process Page"
+                                width="150"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="center-bottom"
+                            />
+                            <img 
+                                src={brochureDesktop4}
+                                alt="Take It Cheesy - Live Site - Contact Page"
+                                width="150"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="center-bottom"
+                            />
+                        </div>
+                    </article>
+                </article>
+
+                {/* Challenges */}
+                <SPChallenges challenge={MY_PROJECTS[3].challenge} />
+                </SRLWrapper>
+
+                {/* Call To Action Buttons */}
+                <SPCallToAction 
+                    home="/"
+                    nextProject="/dino-dash-game"
+                    livesite={MY_PROJECTS[3].liveSite}
+                    github={MY_PROJECTS[3].github}
+                />
+            </SimpleReactLightbox>
+        </section>
+    )
 }
 
 export default SingleBrochureProject;
