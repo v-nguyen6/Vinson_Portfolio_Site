@@ -161,10 +161,12 @@ const SingleBrochureProject = () => {
 
                     {/* Typography */}
                     <SPTypography 
-                        f1="Arial, sans-serif"
-                        f2="Montserrat, sans-serif"
-                        fam1="Montserrat, sans-serif"
-                        fam2="Arial, sans-serif"
+                        f1="Josefin Sans, sans-serif"
+                        f2="Open Sans, sans-serif"
+                        f3="Merriweather, serif"
+                        fam1="Josefin Sans, sans-serif"
+                        fam2="Open Sans, sans-serif"
+                        fam3="Merriweather, serif"
                     />
 
                     {/* Logo */}

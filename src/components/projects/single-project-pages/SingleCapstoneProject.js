@@ -504,10 +504,12 @@ const SingleCapstoneProject = () => {
 
                         {/* Typography */}
                         <SPTypography 
-                            f1="Arial, sans-serif"
-                            f2="Montserrat, sans-serif"
-                            fam1="Montserrat, sans-serif"
-                            fam2="Arial, sans-serif"
+                            f1="Roboto, sans-serif"
+                            f2="Josefin Sans, sans-serif"
+                            f3=""
+                            fam1="Roboto, sans-serif"
+                            fam2="Josefin Sans, sans-serif"
+                            fam3=""
                         />
 
                         {/* Logo */}

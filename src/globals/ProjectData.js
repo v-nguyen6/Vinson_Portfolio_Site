@@ -81,7 +81,7 @@ export const MY_PROJECTS = [
         developmentTeam: "Vinson Nguyen, Mina Bui",
         role: ["Graphic Designer", "Character Development", "Content Asset Creation", "Front-End Developer"],
         tools: ["Javascript", "HTML5", "CSS3", "Sass", "Adobe Illustrator"],
-        colors: ["#282830", "#FFFFFF", "#BD5938"],
+        colors: ["#282830", "#FFFFFF", "#BD5938", "#0DBD38", "#C98138"],
         design:
             "The game concept was inspired by the Google Chrome hidden game when users don't have internet access. Instead of only using the spacebar, we wanted to include the use of directional keyboard inputs which would allow for the user to be able to have a wider range of motion while in play. The design of the game was fleshed out to fit the theme of dinosaurs with a related background as well as related game pieces, and in game elements.",
         development: 

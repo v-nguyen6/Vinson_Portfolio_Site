@@ -166,10 +166,12 @@ const SingleMovieAppProject = () => {
 
                     {/* Typography */}
                     <SPTypography 
-                        f1="Montserrat, sans-serif"
+                        f1="Roboto, sans-serif"
                         f2=""
-                        fam1="Montserrat, sans-serif"
+                        f3=""
+                        fam1="Roboto, sans-serif"
                         fam2=""
+                        fam3=""
                     />
 
                     {/* Development Summary */}

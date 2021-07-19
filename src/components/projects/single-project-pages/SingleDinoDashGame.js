@@ -25,7 +25,6 @@ import SPColorPalette from "../single-project-components/SPColorPalette";
 import SPCallToAction from "../single-project-components/SPCallToAction";
 import SPNextTime from "../single-project-components/SPNextTime";
 
-
 // Project Data
 import { MY_PROJECTS } from "../../../globals/ProjectData";
 
@@ -113,10 +112,12 @@ const SingleDinoDashGame = () => {
 
                     {/* Typography */}
                     <SPTypography 
-                        f1="Montserrat, sans-serif"
+                        f1="VT323, sans-serif"
                         f2=""
-                        fam1="Montserrat, sans-serif"
+                        f3=""
+                        fam1="VT323, sans-serif"
                         fam2=""
+                        fam3=""
                     />
 
                     {/* Development Summary */}

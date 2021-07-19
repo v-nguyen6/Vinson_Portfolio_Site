@@ -7,7 +7,7 @@ General React Dependencies / Custom Imports & Components
 import React from "react";
 
 //--------------------------------------------------------------
-const SPTypography = ({ f1, f2, fam1, fam2}) => {
+const SPTypography = ({ f1, f2, f3, fam1, fam2, fam3}) => {
     return (
         <article className="single-project-component__typography">
             <h3
@@ -97,6 +97,47 @@ const SPTypography = ({ f1, f2, fam1, fam2}) => {
                         <p
                             className="typeface-placeholder"
                             style={{ fontFamily: fam2 }}
+                            data-aos="fade-right"
+                            data-aos-easing="ease-out-sine"
+                            data-aos-once="false"
+                            data-aos-duration="900"
+                            data-aos-anchor-placement="top-bottom"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                )}
+
+                {/* Typeface 3 */}
+                {f3 !== "" && (
+                    <div className="typeface">
+                        <h4
+                            className="typeface-sample"
+                            style={{ fontFamily: fam3 }}
+                            data-aos="fade-right"
+                            data-aos-easing="ease-out-sine"
+                            data-aos-once="false"
+                            data-aos-duration="900"
+                            data-aos-anchor-placement="top-bottom"
+                        >
+                            Aa
+                        </h4>
+
+                        <h5
+                            className="typeface-name"
+                            style={{ fontFamily: fam3 }}
+                            data-aos="fade-right"
+                            data-aos-easing="ease-out-sine"
+                            data-aos-once="false"
+                            data-aos-duration="900"
+                            data-aos-anchor-placement="top-bottom"
+                        >
+                            {f3}
+                        </h5>
+
+                        <p
+                            className="typeface-placeholder"
+                            style={{ fontFamily: fam3 }}
                             data-aos="fade-right"
                             data-aos-easing="ease-out-sine"
                             data-aos-once="false"

@@ -222,10 +222,12 @@ const SinglePortfolioProject = () => {
 
                         {/* Typography */}
                         <SPTypography 
-                            f1="Arial, sans-serif"
-                            f2="Montserrat, sans-serif"
+                            f1="Montserrat, sans-serif"
+                            f2="BioRhyme, serif"
+                            f3="Calibri, sans-serif"
                             fam1="Montserrat, sans-serif"
-                            fam2="Arial, sans-serif"
+                            fam2="BioRhyme, serif"
+                            fam3="Calibri, sans-serif"
                         />
 
                         {/* Content Section Divider */}
