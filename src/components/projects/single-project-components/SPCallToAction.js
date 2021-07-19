@@ -33,7 +33,6 @@ const SPCallToAction = ({ home, nextProject, livesite, github }) => {
                 </a>
                 <a
                     href={github === "none" ? "#0" : github}
-                    href={livesite === "none" ? "#0" : livesite}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="live-site"

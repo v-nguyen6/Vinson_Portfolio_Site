@@ -641,7 +641,7 @@ const SingleCapstoneProject = () => {
                     home="/"
                     nextProject="/react-portfolio"
                     livesite={MY_PROJECTS[1].liveSite}
-                    github={MY_PROJECTS[2].github}
+                    github={MY_PROJECTS[1].github}
                 />
             </SimpleReactLightbox>
         </section>

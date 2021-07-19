@@ -54,7 +54,294 @@ import wireframeDesktop3 from "../../../assets/portfolio/wireframes/portfolio-wi
 
 //--------------------------------------------------------------
 const SinglePortfolioProject = () => {
-  
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+
+    // Options and Customization for Lightbox
+    const options = {
+        settings: {
+            overlayColor: "black",
+            lightboxTransitionSpeed: 0.1,
+        },
+
+        caption: {
+            captionColor: "blue",
+        },
+
+        buttons: {
+            showAutoplayButton: false,
+            showCloseButton: true, 
+            showDownloadButton: false,
+            showFullscreenButton: false, 
+            showNextButton: true, 
+            showPrevButton: true, 
+            showThumbnailsButton: false, 
+            size: "40px",
+        },
+    }
+
+    // Initialize AOS Plugin
+    AOS.init();
+
+    return (
+        <section className="single-project-component">
+            <Helmet>
+                <title>React Portfolio - Vinson Nguyen</title>
+                <meta 
+                    name="description"
+                    content="A react application that highlights and showcases my technical projects."
+                />
+            </Helmet>
+            
+            <SimpleReactLightbox>
+                {/* Title & Tagline */}
+                <SPTitle title={MY_PROJECTS[2].title} tagline={MY_PROJECTS[2].tagline} />
+
+                {/* Overview */}
+                <SPOverview 
+                    scope={MY_PROJECTS[2].scope}
+                    devTeam={MY_PROJECTS[2].developmentTeam}
+                    role={MY_PROJECTS[2].role}
+                    tools={MY_PROJECTS[2].tools}
+                    githubLink={MY_PROJECTS[2].github}
+                    livesiteLink={MY_PROJECTS[2].liveSite}
+                    mobileBanner={mobileBanner}
+                    desktopBanner={desktopBanner}
+                    duration={"3 Weeks"}
+                />
+
+                {/* Content Section Divider */}
+                <div className="timeline-divider"></div>
+
+                <SRLWrapper options={options}>
+                    {/* Pre-Development */}
+                    <article className="single-project-component__process">
+                        <h3 className="process-heading">Pre-Development</h3>
+
+                        {/* Content Plan & Site Map */}
+                        <div className="process-item content-plan-site-map">
+                            <h4>Content Plan & Site Map</h4>
+                            <p className="excerpt">
+                                During the pre-development phase of the project after getting ideas and being 
+                                inspired by other portfolio sites, I needed to start the project just how I 
+                                normally would with any project, by planning out the basic structure and fleshing 
+                                out content detail. This involved starting with a content plan which highlighted 
+                                specifically what content I wanted to place into the site/project. After understanding 
+                                the basics of what content I wanted to include; I was able to build out a site map. 
+                                The site map helped me get a sense of the structure of the site, which pages I wanted to 
+                                include individual content, and how users would traverse the site. {" "}
+                                <span>(Click the images below to get a better view of the document)</span>
+                            </p>
+
+                            <div className="content-plan-site-map__gallery">
+                                <img 
+                                    src={contentPlan1}
+                                    alt="Content Plan Document"
+                                    width="250"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img 
+                                    src={siteMap1}
+                                    alt="Site Map Document"
+                                    width="250"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                            </div>
+
+                            <div className="document-external-link">
+                                <p className="document-external-link__text">
+                                    A link to the full PDF of the document can be found here:
+                                </p>
+                                <a 
+                                    className="document-external-link__button"
+                                    href="https://vinsonnguyen.com"
+                                    title="Google Drive Link: Content Plan & Site Map"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Content Plan & Site Map
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Design Summary */}
+                        <SPDesign text={MY_PROJECTS[2].design} />
+
+                        {/* Wireframes - Desktop */}
+                        <div className="process-item wireframes-desktop">
+                            <h3 className="process-heading">Wireframes - Desktop</h3>
+                            <img
+                                src={wireframeDesktop1}
+                                alt="React Portfolio Wireframes - Desktop - Home Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeDesktop2}
+                                alt="React Portfolio Wireframes - Desktop - About Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframeDesktop3}
+                                alt="React Portfolio Wireframes - Desktop - Single Project Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                        </div>
+
+                        {/* Content Section Divider */}
+                        <div className="timeline-divider"></div>
+
+                        {/* Color Palette */}
+                        <SPColorPalette 
+                            col1={MY_PROJECTS[2].colors[0]}
+                            col2={MY_PROJECTS[2].colors[1]}
+                            col3={MY_PROJECTS[2].colors[2]}
+                            col4={MY_PROJECTS[2].colors[3]}
+                            col5={MY_PROJECTS[2].colors[4]}
+                        />
+
+                        {/* Typography */}
+                        <SPTypography 
+                            f1="Arial, sans-serif"
+                            f2="Montserrat, sans-serif"
+                            fam1="Montserrat, sans-serif"
+                            fam2="Arial, sans-serif"
+                        />
+
+                        {/* Content Section Divider */}
+                        <div className="timeline-divider"></div>
+
+                        {/* Development Summary */}
+                        <SPDevelopment text={MY_PROJECTS[2].development} />
+
+                        {/* Project Images */}
+                        <article
+                            className="final-project-gallery--mobile"
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-quart"
+                            data-aos-once="false"
+                            data-aos-anchor-placement="top-center"
+                        >
+                            <h2>Site Screenshots</h2>
+                            <h3>Mobile</h3>
+                            <hr />
+                            <div className="mobile-gallery">
+                                <img 
+                                    src={portfolioMobile1}
+                                    alt="React Portfolio - Live Site - Home Page"
+                                    width="350"
+                                    loading="lazy"
+                                />
+                                <img 
+                                    src={portfolioMobile2}
+                                    alt="React Portfolio - Live Site - Works Page"
+                                    width="350"
+                                    loading="lazy"
+                                />
+                                <img 
+                                    src={portfolioMobile3}
+                                    alt="React Portfolio - Live Site - Single Project Page"
+                                    width="350"
+                                    loading="lazy"
+                                />
+                                <img 
+                                    src={portfolioMobile4}
+                                    alt="React Portfolio - Live Site - About Page"
+                                    width="350"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </article>
+
+                        <article 
+                            className="final-project-gallery--desktop"
+                            data-aos="fade-up"
+                            data-aos-easing="ease-out-quart"
+                            data-aos-once="false"
+                            data-aos-anchor-placement="top-center"
+                        >
+                            <h3>Desktop</h3>
+                            <hr />
+                            <div className="desktop-gallery">
+                                <img 
+                                    src={portfolioDesktop1}
+                                    alt="React Portfolio - Live Site - Home Page"
+                                    width="150"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img 
+                                    src={portfolioDesktop2}
+                                    alt="React Portfolio - Live Site - Works Page"
+                                    width="150"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img 
+                                    src={portfolioDesktop3}
+                                    alt="React Portfolio - Live Site - Single Project Page"
+                                    width="150"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img 
+                                    src={portfolioDesktop4}
+                                    alt="React Portfolio - Live Site - About Page"
+                                    width="150"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                            </div>
+                        </article>
+
+                        {/* Challenges */}
+                        <SPChallenges challenge={MY_PROJECTS[2].challenge} />
+                    </article>
+                </SRLWrapper>
+
+                {/* Call To Action Buttons */}
+                <SPCallToAction 
+                    home="/"
+                    nextProject="/react-portfolio"
+                    livesite={MY_PROJECTS[2].liveSite}
+                    github={MY_PROJECTS[2].github}
+                />
+            </SimpleReactLightbox>
+        </section>
+
+    )
 }
 
 export default SinglePortfolioProject;
