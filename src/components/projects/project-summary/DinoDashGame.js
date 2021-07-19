@@ -8,7 +8,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Components & Assets
-import SummaryBanner from "../../../assets/homepage/work_summary_dino_dash.png";
+import SummaryBanner from "../../../assets/homepage/work_summary_dino-dash.png";
 
 //--------------------------------------------------------------
 const DinoDashGame = () => {
