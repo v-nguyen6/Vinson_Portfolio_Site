@@ -101,14 +101,16 @@ const SingleDinoDashGame = () => {
                 {/* Design Summary */}
                 <SPDesign text={MY_PROJECTS[4].design} />
                 <SRLWrapper options={options}>
-                    {/* Color Palette */}
-                    <SPColorPalette 
-                        col1={MY_PROJECTS[4].colors[0]}
-                        col2={MY_PROJECTS[4].colors[1]}
-                        col3={MY_PROJECTS[4].colors[2]}
-                        col4={MY_PROJECTS[4].colors[3]}
-                        col5={MY_PROJECTS[4].colors[4]}
-                    />
+                    <div className="dino-dash-container">
+                        {/* Color Palette */}
+                        <SPColorPalette 
+                            col1={MY_PROJECTS[4].colors[0]}
+                            col2={MY_PROJECTS[4].colors[1]}
+                            col3={MY_PROJECTS[4].colors[2]}
+                            col4={MY_PROJECTS[4].colors[3]}
+                            col5={MY_PROJECTS[4].colors[4]}
+                        />
+                    </div>
 
                     {/* Typography */}
                     <SPTypography 
@@ -120,8 +122,11 @@ const SingleDinoDashGame = () => {
                         fam3=""
                     />
 
-                    {/* Development Summary */}
-                    <SPDevelopment text={MY_PROJECTS[4].development} />
+                    <div className="dino-dash-container">
+                        {/* Development Summary */}
+                        <SPDevelopment text={MY_PROJECTS[4].development} />
+                    </div>
+                    
 
                     {/* Project Images */}
                     <article 
@@ -170,8 +175,10 @@ const SingleDinoDashGame = () => {
                     {/* Challenges */}
                     <SPChallenges challenge={MY_PROJECTS[4].challenge} />
 
-                    {/* Challenges */}
-                    <SPNextTime nextTime={MY_PROJECTS[4].nextTime} />
+                    <div className="dino-dash-container">
+                        {/* Challenges */}
+                        <SPNextTime nextTime={MY_PROJECTS[4].nextTime} />
+                    </div>
                 </SRLWrapper>
 
                 {/* Call To Action Buttons */}
