@@ -116,35 +116,37 @@ const SingleBrochureProject = () => {
                 <SRLWrapper options={options}>
                 <article className="single-project-component__process">
                     {/* Wireframes */}
-                    <div className="process-item wireframes-desktop">
+                    <div className="process-item wireframes">
                         <h3 className="process-heading">Wireframes</h3>
-                        <img
-                            src={wireframe1}
-                            alt="Take It Cheesy - Wireframes - Home Page"
-                            loading="lazy"
-                            data-aos="fade-up"
-                            data-aos-easing="ease-out-quart"
-                            data-aos-once="false"
-                            //data-aos-anchor-placement="center-bottom"
-                        />
-                        <img
-                            src={wireframe2}
-                            alt="Take It Cheesy - Wireframes - Process Page"
-                            loading="lazy"
-                            data-aos="fade-up"
-                            data-aos-easing="ease-out-quart"
-                            data-aos-once="false"
-                            //data-aos-anchor-placement="center-bottom"
-                        />
-                        <img
-                            src={wireframe3}
-                            alt="Take It Cheesy - Wireframes - Process Page"
-                            loading="lazy"
-                            data-aos="fade-up"
-                            data-aos-easing="ease-out-quart"
-                            data-aos-once="false"
-                            //data-aos-anchor-placement="center-bottom"
-                        />
+                        <div className="wireframes__gallery">
+                            <img
+                                src={wireframe1}
+                                alt="Take It Cheesy - Wireframes - Home Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframe2}
+                                alt="Take It Cheesy - Wireframes - Process Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                            <img
+                                src={wireframe3}
+                                alt="Take It Cheesy - Wireframes - Process Page"
+                                loading="lazy"
+                                data-aos="fade-up"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                //data-aos-anchor-placement="center-bottom"
+                            />
+                        </div>
                     </div>
 
                     {/* Content Section Divider */}

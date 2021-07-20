@@ -191,9 +191,6 @@ const SinglePortfolioProject = () => {
                         {/* Wireframes */}
                         <div className="process-item wireframes">
                             <h3 className="process-heading">Wireframes</h3>
-
-                            {/* Wireframes - Desktop */}
-                            <h4 className="process-heading">Desktop</h4>
                             <div className="wireframes__gallery">
                                 <img
                                     src={wireframeDesktop1}

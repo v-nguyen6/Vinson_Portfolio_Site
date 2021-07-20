@@ -6,3 +6,43 @@
 // --- Imports
 @import "../../0-abstracts/abstracts";
 
+.single-project-component {
+    .brochure-logo {
+        max-width: 800px;
+        margin: auto;
+        padding: 50px 0px;
+        margin-top: 100px;
+        @include col-center-items;
+
+        .logo-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 80%;
+            }
+            @media screen and (min-width: 35em) {
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 15px;
+                img:nth-child(1) {
+                    margin: 0px;
+                    margin-left: 15px;
+                    margin-top: -10px;
+                }
+            }   
+            img:nth-child(1) {
+                background: #efefef;
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            img:nth-child(2) {
+                background: #363636;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
