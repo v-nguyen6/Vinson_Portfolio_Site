@@ -1,0 +1,193 @@
+/*
+---------------------------------------------------------------
+* --- Capstone Project - Etoile - Styling
+---------------------------------------------------------------
+*/
+// --- Imports
+@import "../../0-abstracts/abstracts";
+
+.single-project-component {
+    &__process {
+        // Planning Section
+        .planning {
+            display: flex;
+            flex-direction: column;;
+            align-items: flex-start;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        // Inspiration Section
+        .inspirations {
+            @include col-center-items;
+            &__imgs {
+                @include col-center-items;
+                img {
+                    max-width: 600px;
+                    margin: 0px auto 20px auto;
+                }
+            }
+
+            @media screen and (min-width: 75em) {
+                .inspirations__imgs {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 15px;
+
+                    img {
+                        max-width: 700px;
+                        height: 450px;
+                        margin: 0px;
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                }
+            }
+        }
+
+        // Memo of Understanding Section
+        .memo-of-understanding {
+            max-width: 800px;
+            margin: auto;
+            margin-bottom: 50px;
+
+            p {
+                margin-bottom: 10px;
+                span {
+                    //font-family: ;
+                    //color: blue;
+                }
+            }
+
+            .memo-of-understanding__gallery {
+                img {
+                    margin: 0px;
+                    width: 100%;
+                    height: auto;
+                }
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+
+                @media screen and (min-width: 25em) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                @media screen and (min-width: 60em) {
+                    grid-template-columns: repeat(6, 1fr);
+                }
+            }
+        }
+
+        // Content Plan / Site Map Section
+        .content-plan-site-map {
+            max-width: 800px;
+            margin: auto;
+            margin-bottom: 50px;
+
+            &__gallery {
+                /* --- larger images displayed....
+                margin-top: 20px;
+                @media screen and (min-width: 50em) {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 15px;
+                    img {
+                        margin: 0px;
+                        padding: 0px;
+                        height: 600px;
+                        width: auto;
+                    }
+                }
+                img {
+                    margin: 0px;
+                    width: 100%;
+                    height: auto;
+                }
+                */
+                img {
+                    margin: 0px;
+                    width: 100%;
+                    height: auto;
+                }
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+
+                @media screen and (min-width: 25em) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                @media screen and (min-width: 60em) {
+                    grid-template-columns: repeat(6, 1fr);
+                }
+            }
+        }
+
+        // Wireframes Section
+        .wireframes {
+            max-width: 1000px;
+            margin: auto;
+            margin-top: -150px;
+            
+            &__gallery {
+                margin-top: 20px;
+                @media screen and (min-width: 50em) {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 15px;
+                    img {
+                        margin: 0px;
+                        padding: 0px;
+                        height: 600px;
+                        width: auto;
+                    }
+                }
+                img {
+                    margin: 0px;
+                    width: 100%;
+                    height: auto;
+                    padding-bottom: 10px;
+                }
+            }   
+        }
+
+        // High Fidelity Mockup Section
+        .mockup {
+            @include col-center-items;
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 600px;
+
+            }
+        }
+    }
+
+    // Logo Section
+    .etoile-logo {
+        max-width: 800px;
+        margin: auto;
+        padding: 50px 0px;
+        @include col-center-items;
+
+        .logo-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 80%;
+            }
+            @media screen and (min-width: 35em) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 15px;
+            }   
+        }
+    }
+
+    // Capstone Container
+    .capstone-container {
+        margin-top: -70px;
+    }
+}

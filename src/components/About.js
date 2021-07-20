@@ -120,7 +120,7 @@ const About = () => {
 
                     <a
                         className="about-resume-link"
-                        href="https://vinsonnguyen.com"
+                        href="https://drive.google.com/file/d/1URtpgKKxnL4kkg03Mem31d8fa4sy-D6r/view?usp=sharing"
                         title="Google Drive Link: Vinson's Web Dev Resume"
                         target="_blank"
                         rel="noreferrer"

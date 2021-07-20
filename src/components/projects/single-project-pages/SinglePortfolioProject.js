@@ -108,7 +108,7 @@ const SinglePortfolioProject = () => {
                     livesiteLink={MY_PROJECTS[2].liveSite}
                     mobileBanner={mobileBanner}
                     desktopBanner={desktopBanner}
-                    duration={"3 Weeks"}
+                    duration={"4 Weeks"}
                 />
 
                 {/* Content Section Divider */}
@@ -163,7 +163,7 @@ const SinglePortfolioProject = () => {
                                 </p>
                                 <a 
                                     className="document-external-link__button"
-                                    href="https://vinsonnguyen.com"
+                                    href="https://drive.google.com/file/d/1uQVIvdGBfCF73rCSvAJW4Ojh6dZlyaOB/view?usp=sharing"
                                     title="Google Drive Link: Content Plan & Site Map"
                                     target="_blank"
                                     rel="noreferrer"

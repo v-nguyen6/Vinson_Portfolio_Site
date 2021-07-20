@@ -3,15 +3,12 @@
 * --- Pages Imports
 ---------------------------------------------------------------
 */
-/*
-   --- About Page
-*/ 
+
+// --- About Page ---
 @import "./about-page/about";
 @import "./about-page/about-skills";
 
-/*
-   --- Home Page
-*/ 
+// --- Home Page ---
 // Project Summaries
 @import "./home-page/project-summaries";
 // Splash Page
@@ -19,21 +16,16 @@
 // Work Summary
 @import "./home-page/work-summary";
 
-
-/*
-   --- Single Project Pages
-*/ 
-// Single Project Components - General Styling for Single Components
-//@import "./single-project-pages/single-project";
-
+// --- Single Project Pages ---
+// Single Project - General Styling
+@import "./single-project-pages/single-project-general";
 // Brochure Project Styling - Take It Cheesy
-
-
+@import "./single-project-pages/single-project-brochure";
 // Capstone Project Styling - Etoile
-
-
+@import "./single-project-pages/single-project-capstone";
+// Javascript Game Styling - Dino-Dash
+@import "./single-project-pages/single-project-dino-dash";
 // React Movie App Project - Filmdex
-
-
-// Portfolio Project - Vinson's Portfolio
+// React Portfolio - Vinson's Portfolio
+@import "./single-project-pages/single-project-portfolio";
 
