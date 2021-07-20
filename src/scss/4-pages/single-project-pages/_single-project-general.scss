@@ -50,6 +50,34 @@
             margin-top: 50px;
         }
 
+        // Wireframes Section
+        .wireframes {
+            max-width: 1000px;
+            margin: auto;
+            margin-top: -150px;
+            
+            &__gallery {
+                margin-top: 20px;
+                @media screen and (min-width: 50em) {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 15px;
+                    img {
+                        margin: 0px;
+                        padding: 0px;
+                        height: 600px;
+                        width: auto;
+                    }
+                }
+                img {
+                    margin: 0px;
+                    width: 100%;
+                    height: auto;
+                    padding-bottom: 10px;
+                }
+            }   
+        }
+
         // External Link for Documents
         .document-external-link {
             width: 100%;

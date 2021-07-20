@@ -11,7 +11,7 @@ const SPChallenges = ({ challenge }) => {
     return (
         <article className="single-project-component-challenges">
             <section className="single-project-component-challenges__container">
-                <h3> What I found Challenging</h3>
+                <h3> Challenges</h3>
                 <hr />
                 <p> {challenge} </p>
             </section>    

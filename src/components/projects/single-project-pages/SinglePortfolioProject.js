@@ -43,10 +43,10 @@ import portfolioDesktop2 from "../../../assets/portfolio/desktop/portfolio-deskt
 import portfolioDesktop3 from "../../../assets/portfolio/desktop/portfolio-desktop-screenshot-single-project.png";
 import portfolioDesktop4 from "../../../assets/portfolio/desktop/portfolio-desktop-screenshot-about.png";
 // --- Development Assets ---
-// - Content Plan
-import contentPlan1 from "../../../assets/portfolio/content-plan/portfolio-contentplan.jpg";
-// - Sitemap
-import siteMap1 from "../../../assets/portfolio/site-map/portfolio-sitemap.jpg";
+// - Content Plan / Site Map 
+import coverSheet from "../../../assets/portfolio/content-plan-site-map/portfolio-coversheet.jpg";
+import contentPlan1 from "../../../assets/portfolio/content-plan-site-map/portfolio-contentplan.jpg";
+import siteMap1 from "../../../assets/portfolio/content-plan-site-map/portfolio-sitemap.jpg";
 // - Wireframes - Desktop
 import wireframeDesktop1 from "../../../assets/portfolio/wireframes/portfolio-wireframe-desktop-home.jpg";
 import wireframeDesktop2 from "../../../assets/portfolio/wireframes/portfolio-wireframe-desktop-about.jpg";
@@ -136,6 +136,16 @@ const SinglePortfolioProject = () => {
 
                             <div className="content-plan-site-map__gallery">
                                 <img 
+                                    src={coverSheet}
+                                    alt="Content Plan Document"
+                                    width="250"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
+                                <img 
                                     src={contentPlan1}
                                     alt="Content Plan Document"
                                     width="250"
@@ -173,39 +183,46 @@ const SinglePortfolioProject = () => {
                             </div>
                         </div>
 
-                        {/* Design Summary */}
-                        <SPDesign text={MY_PROJECTS[2].design} />
+                        <div className="portfolio-container">
+                            {/* Design Summary */}
+                            <SPDesign text={MY_PROJECTS[2].design} />
+                        </div>
 
-                        {/* Wireframes - Desktop */}
-                        <div className="process-item wireframes-desktop">
-                            <h3 className="process-heading">Wireframes - Desktop</h3>
-                            <img
-                                src={wireframeDesktop1}
-                                alt="React Portfolio Wireframes - Desktop - Home Page"
-                                loading="lazy"
-                                data-aos="fade-up"
-                                data-aos-easing="ease-out-quart"
-                                data-aos-once="false"
-                                //data-aos-anchor-placement="center-bottom"
-                            />
-                            <img
-                                src={wireframeDesktop2}
-                                alt="React Portfolio Wireframes - Desktop - About Page"
-                                loading="lazy"
-                                data-aos="fade-up"
-                                data-aos-easing="ease-out-quart"
-                                data-aos-once="false"
-                                //data-aos-anchor-placement="center-bottom"
-                            />
-                            <img
-                                src={wireframeDesktop3}
-                                alt="React Portfolio Wireframes - Desktop - Single Project Page"
-                                loading="lazy"
-                                data-aos="fade-up"
-                                data-aos-easing="ease-out-quart"
-                                data-aos-once="false"
-                                //data-aos-anchor-placement="center-bottom"
-                            />
+                        {/* Wireframes */}
+                        <div className="process-item wireframes">
+                            <h3 className="process-heading">Wireframes</h3>
+
+                            {/* Wireframes - Desktop */}
+                            <h4 className="process-heading">Desktop</h4>
+                            <div className="wireframes__gallery">
+                                <img
+                                    src={wireframeDesktop1}
+                                    alt="React Portfolio Wireframes - Desktop - Home Page"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    //data-aos-anchor-placement="center-bottom"
+                                />
+                                <img
+                                    src={wireframeDesktop2}
+                                    alt="React Portfolio Wireframes - Desktop - About Page"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    //data-aos-anchor-placement="center-bottom"
+                                />
+                                <img
+                                    src={wireframeDesktop3}
+                                    alt="React Portfolio Wireframes - Desktop - Single Project Page"
+                                    loading="lazy"
+                                    data-aos="fade-up"
+                                    data-aos-easing="ease-out-quart"
+                                    data-aos-once="false"
+                                    //data-aos-anchor-placement="center-bottom"
+                                />
+                            </div>
                         </div>
 
                         {/* Content Section Divider */}
@@ -233,8 +250,10 @@ const SinglePortfolioProject = () => {
                         {/* Content Section Divider */}
                         <div className="timeline-divider"></div>
 
-                        {/* Development Summary */}
-                        <SPDevelopment text={MY_PROJECTS[2].development} />
+                        <div className="portfolio-container">
+                            {/* Development Summary */}
+                            <SPDevelopment text={MY_PROJECTS[2].development} />
+                        </div>
 
                         {/* Project Images */}
                         <article
