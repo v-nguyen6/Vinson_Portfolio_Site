@@ -24,7 +24,7 @@
 
 // * Summary Sections
 .summary  {
-    padding: 20px;
+    padding: 50px 20px;
     margin: auto;
     @include col-center-items;
     // Work Summary Intro
@@ -129,7 +129,4 @@
             }
         }
     }
-
-
-    
 }
