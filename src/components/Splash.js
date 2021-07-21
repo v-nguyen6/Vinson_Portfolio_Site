@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 
 // Custom React Components
 // - Icon to Scroll down to "contact" section
-//import ScrollDownIcon from "./widgets/ScrollDownIcon";
+import ScrollDownIcon from "./widgets/ScrollDownIcon";
 
 // AOS
-//import AOS from "aos";
+import AOS from "aos";
 
-//--------------------------------------------------------------
-const Splash = () => {
+    //--------------------------------------------------------------
+    const Splash = () => {
     // Initialize AOS plugin
     //AOS.init();
    
@@ -30,9 +30,9 @@ const Splash = () => {
                     data-aos-easing="ease-out-quart"
                     data-aos-once="false"
                     data-aos-duration="850"
-                    //data-aos-mirror="true"
+                    data-aos-mirror="true"
                 >
-                    I build websites using innovative tools.
+                    I build value through design.
                 </h1>
 
                 <p 
@@ -41,7 +41,7 @@ const Splash = () => {
                     data-aos-once="false"
                     data-aos-delay="100"
                     data-aos-duration="850"
-                    //data-aos-mirror="true"
+                    data-aos-mirror="true"
                 >
                     Front-End Web Developer & Graphic Designer with background in UX / UI based in Vancouver, BC.
                 </p>
@@ -59,11 +59,8 @@ const Splash = () => {
                 </div>
             </section>
 
-            {/* 
-            Scroll Down Icon 
+            {/* Scroll Down Icon  */}
             <ScrollDownIcon />
-            */}
-            
         </article>
     ); 
 }

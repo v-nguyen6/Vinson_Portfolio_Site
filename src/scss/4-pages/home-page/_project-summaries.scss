@@ -48,6 +48,7 @@
 
         &__name {
             font-size: 1.5em;
+            font-weight: 800;
             margin-bottom: 10px;
             display: flex;
             flex-direction: row;
@@ -60,7 +61,7 @@
                 display: none;
                 @media screen and (min-width: 450px) {
                     display: block;
-                    background: magenta;
+                    background: $accent1;
                     width: 25px;
                     height: 3px;
                     margin-left: 5px;
@@ -69,7 +70,8 @@
         }
 
         &__subtitle {
-            font-size: 1em;
+            font-size: 0.9em;
+            font-weight: 600;
             text-transform: uppercase;
             margin-bottom: 10px;
             display: flex;

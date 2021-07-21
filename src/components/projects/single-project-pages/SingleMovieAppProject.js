@@ -47,7 +47,10 @@ import movieDesktop1 from "../../../assets/movie-app/desktop/filmdex-desktop-scr
 import movieDesktop2 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-single.png";
 import movieDesktop3 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-favourite.png";
 import movieDesktop4 from "../../../assets/movie-app/desktop/filmdex-desktop-screenshot-about.png";
-
+// --- Development Assets ---
+// - Logo
+import logo1 from "../../../assets/movie-app/logo/logo-1.png";
+import logo2 from "../../../assets/movie-app/logo/logo-2.png";
 
 //--------------------------------------------------------------
 const SingleMovieAppProject = () => {
@@ -63,10 +66,15 @@ const SingleMovieAppProject = () => {
         },
 
         caption: {
-            captionColor: "blue",
+            captionColor: "#50B492",
+            captionFontFamily: "Ubuntu, sans-serif",
+            captionFontWeight: "400",
         },
 
         buttons: {
+            size: "40px",
+            backgroundColor: "#1b5245",
+            iconColor: "#50B492",
             showAutoplayButton: false,
             showCloseButton: true, 
             showDownloadButton: false,
@@ -74,7 +82,6 @@ const SingleMovieAppProject = () => {
             showNextButton: true, 
             showPrevButton: true, 
             showThumbnailsButton: false, 
-            size: "40px",
         },
     }
 
@@ -173,6 +180,32 @@ const SingleMovieAppProject = () => {
                         fam2=""
                         fam3=""
                     />
+
+                    {/* Logo */}
+                    <div className="movieapp-logo">
+                        <h3>Logo</h3>
+                        <hr />
+                        <div className="logo-items">
+                            <img
+                                src={logo1}
+                                width="250"
+                                loading="lazy"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="top-center"
+                            />
+                            <img
+                                src={logo2}
+                                width="250"
+                                loading="lazy"
+                                data-aos="fade-left"
+                                data-aos-easing="ease-out-quart"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="top-center"
+                            />
+                        </div>
+                    </div>
 
                     {/* Development Summary */}
                     <SPDevelopment text={MY_PROJECTS[0].development} />

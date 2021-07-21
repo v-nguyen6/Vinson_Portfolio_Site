@@ -91,10 +91,15 @@ const SingleCapstoneProject = () => {
         },
 
         caption: {
-            captionColor: "blue",
+            captionColor: "#50B492",
+            captionFontFamily: "Ubuntu, sans-serif",
+            captionFontWeight: "400",
         },
 
         buttons: {
+            size: "40px",
+            backgroundColor: "#1b5245",
+            iconColor: "#50B492",
             showAutoplayButton: false,
             showCloseButton: true, 
             showDownloadButton: false,
@@ -102,7 +107,6 @@ const SingleCapstoneProject = () => {
             showNextButton: true, 
             showPrevButton: true, 
             showThumbnailsButton: false, 
-            size: "40px",
         },
     }
 

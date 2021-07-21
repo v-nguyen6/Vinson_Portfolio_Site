@@ -66,10 +66,15 @@ const SinglePortfolioProject = () => {
         },
 
         caption: {
-            captionColor: "blue",
+            captionColor: "#50B492",
+            captionFontFamily: "Ubuntu, sans-serif",
+            captionFontWeight: "400",
         },
 
         buttons: {
+            size: "40px",
+            backgroundColor: "#1b5245",
+            iconColor: "#50B492",
             showAutoplayButton: false,
             showCloseButton: true, 
             showDownloadButton: false,
@@ -77,7 +82,6 @@ const SinglePortfolioProject = () => {
             showNextButton: true, 
             showPrevButton: true, 
             showThumbnailsButton: false, 
-            size: "40px",
         },
     }
 
@@ -130,7 +134,7 @@ const SinglePortfolioProject = () => {
                                 specifically what content I wanted to place into the site/project. After understanding 
                                 the basics of what content I wanted to include; I was able to build out a site map. 
                                 The site map helped me get a sense of the structure of the site, which pages I wanted to 
-                                include individual content, and how users would traverse the site. {" "}
+                                include individual content, and how users would traverse the site. <br></br>
                                 <span>(Click the images below to get a better view of the document)</span>
                             </p>
 

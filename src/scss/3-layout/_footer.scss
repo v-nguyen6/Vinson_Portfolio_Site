@@ -19,11 +19,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 75%;
+        height: 72.5%;
 
         h3 {
-            font-size: 1.3em;
-            margin-bottom: 20px;
+            font-size: 2em;
+            margin-bottom: 40px;
             //margin: auto;
             color: white;
             @media screen and (min-width: 50em) {
@@ -33,9 +33,7 @@
 
         button svg {
             &:hover {
-                fill: hotpink;
-                color: hotpink;
-                //cursor: url(), auto;
+                color: $accent1;
             }
         }
 
@@ -46,29 +44,30 @@
 
     // Bottom Section 
     &__bottom-section {
-        background: rgba(darkblue, 0.875);
+        background: transparent;
+        height: 25%;
+        @include col-center-items;
         .footer-social-icons {
             a {
                 border-style: none;
                 &:hover {
-                    background: red;
+                    background: none;
                 }
             }
         }
-
-        height: 25%;
-        @include col-center-items;
         svg {
             margin: 5px;
+            margin-bottom: 10px;
             transition: all 0.4s ease-out;
             &:hover {
-                fill: red;
+                fill: $accent1;
             }
         }
 
         h4 {
             font-size: 1.1em;
-            margin-bottom: 5px;
+            font-weight: 600;
+            margin-bottom: 15px;
         }
 
         .copyright {

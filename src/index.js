@@ -12,7 +12,6 @@ import App from './App';
 // Stylesheet
 import "./scss/styles.scss";
 
-// *** not sure yet if need to use.. ***
 import "aos/dist/aos.css";
 
 // *** not sure yet if need to use.. ***

@@ -13,9 +13,6 @@ import AboutImage from "../assets/about/about-image.png";
 
 //--------------------------------------------------------------
 const About = () => {
-    // Initiate the AOS Plugin
-    AOS.init();
-
     return (
         <article className="section about">
             <Helmet>
@@ -39,8 +36,6 @@ const About = () => {
                         data-aos-easing="ease-out-cubic"
                         data-aos-once="false"
                         data-aos-duration="750"
-                        data-aos-mirror="true"
-
                     />
                 </div>
                 <div className="my-summary__text">
@@ -49,8 +44,7 @@ const About = () => {
                         data-aos="fade-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-once="false"
-                        data-aos-duration="750"
-                        data-aos-mirror="true"
+                        data-aos-duration="650"
                     >
                         Who am I
                     </h1>
@@ -60,8 +54,7 @@ const About = () => {
                         data-aos="fade-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-once="false"
-                        data-aos-duration="750"
-                        data-aos-mirror="true"
+                        data-aos-duration="650"
                     >
                         Graphic Designer and Front-End Developer
                     </h2>
@@ -70,8 +63,7 @@ const About = () => {
                         data-aos="fade-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-once="false"
-                        data-aos-duration="750"
-                        data-aos-mirror="true"
+                        data-aos-duration="650"
                     />
 
                     <p
@@ -81,7 +73,7 @@ const About = () => {
                         data-aos-once="false"
                         data-aos-duration="750"
                         data-aos-mirror="true"
-                        data-aos-delay="750"
+                        data-aos-delay="650"
                     >
                         My training and experience at BCIT’s Technical Web development program, an intensive program combining 
                         current web design technologies with challenging assignments, structured projects, and industry experiences, 
@@ -95,7 +87,7 @@ const About = () => {
                         data-aos-once="false"
                         data-aos-duration="750"
                         data-aos-mirror="true"
-                        data-aos-delay="750"
+                        data-aos-delay="650"
                     >
                         My experience with the Interactive Arts and Technology program at Simon Fraser University allowed me to grow and 
                         cultivate my background in UX/UI design as well as build a solid foundation in graphic design. This is due to the 
@@ -112,7 +104,7 @@ const About = () => {
                         data-aos-once="false"
                         data-aos-duration="750"
                         data-aos-mirror="true"
-                        data-aos-delay="750"
+                        data-aos-delay="650"
                     >
                         As a front-end developer, I strive towards always being inspried to learn about new and upcoming technologies by developing my ideas
                         with like-minded individuals to create meaningful web applications and sites.
@@ -127,7 +119,7 @@ const About = () => {
                         data-aos="fade-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-once="false"
-                        data-aos-duration="750"
+                        data-aos-duration="650"
                     >
                         Download Resume
                     </a>
@@ -137,7 +129,14 @@ const About = () => {
             {/* Skills */}
             <section className="about-item artillery">
                 {/* Development Stack */}
-                <div className="col-development-stack">
+                <div 
+                    className="col-development-stack"
+                    data-aos="fade-down"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-once="false"
+                    data-aos-duration="450"
+                    data-aos-mirror="true"
+                >
                     <h3>Development Stack</h3>
                     <hr />
                     <ul className="development-stack" title="Scroll Me">
@@ -155,7 +154,14 @@ const About = () => {
                 </div>
 
                 {/* Design Stack */}
-                <div className="col-design-stack">
+                <div 
+                    className="col-design-stack"
+                    data-aos="fade-down"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-once="false"
+                    data-aos-duration="450"
+                    data-aos-mirror="true"
+                >
                     <h3>Design Stack</h3>
                     <hr />
                     <ul className="design-stack" title="Scroll Me">
@@ -169,7 +175,14 @@ const About = () => {
                 </div>
 
                 {/* Technical Skills */}
-                <div className="col-technical-skills">
+                <div 
+                    className="col-technical-skills"
+                    data-aos="fade-down"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-once="false"
+                    data-aos-duration="450"
+                    data-aos-mirror="true"
+                >
                     <h3>Technical Skills</h3>
                     <hr />
                     <ul className="technical-skills">

@@ -20,17 +20,115 @@ html {
         padding: 0px;
         box-sizing: border-box;
         font-size: 1em;
-        //font-family: ;
+        font-family: $font2;
     }
     // scroll behaviours for navigation interactions
     scroll-behavior: smooth;
 }
 
 body {
-    background: darkslateblue;
+    background: black;
     width: 100%;
     overflow-x: hidden;
-    //
+
+    // - Background Image
+    // Mobile Background
+    @media screen and (min-width: 300px) {
+        background-image: url("../../assets/background-mobile.jpg");
+        background-attachment: fixed;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: 400px;
+    }
+    // Tablet Background
+    @media screen and (min-width: 500px) {
+        background-image: url("../../assets/background-tablet.jpg");
+        background-attachment: fixed;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: 1150px;
+    }
+    // Desktop Background
+    @media screen and (min-width: 750px) {
+        background-image: url("../../assets/background-desktop.jpg");
+        background-attachment: fixed;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: 1300px;
+    }
+    
+    @media screen and (min-width: 1350px) {
+        background-size: cover;
+    }
+
+    // - Cursor / Animations & Effects
+    cursor: url("../../assets/cursor-1.png"), auto;
+    .main-page {
+        width: 100%;
+    }
+    .cursor {
+        border: 1px solid $accent1;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background: none;
+        border-radius: 50%;
+        z-index: 999;
+        transition-duration: 100ms;
+        transition-timing-function: ease-out;
+        pointer-events: none;
+        animation: cursorAnim 0.5s infinite alternate;
+    }
+    // Animation for 2nd outer circle
+    .cursor::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        border: 8px solid $accent1;
+        border-radius: 50%;
+        opacity: 0.5;
+        top: -9px;
+        left: -9px;
+        z-index: -1;
+        animation: cursorAnim2 0.5s infinite alternate;
+        animation-delay: 0.7s;
+    }
+    @keyframes cursorAnim {
+        from {
+            transform: scale(1);
+        } to {
+            transform: scale(2);
+        }
+    }
+    @keyframes cursorAnim2 {
+        from {
+            transform: scale(1);
+        } to {
+            transform: scale(0.4);
+        }
+    }
+
+    @keyframes cursorAnim3 {
+        0% {
+            transform: scale(2);
+        }
+        50% {
+            transform: scale(5);
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+
+    .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid $accent1;
+    }
 }
 
 /*
@@ -40,18 +138,26 @@ body {
 */
 h1, 
 h2, 
-h3, 
+h3 {
+    font-size: 2.45em;
+    font-family: $font1;
+    font-weight: 700;
+}
+
 h4, 
 h5, 
 h6 {
     font-size: 2.45em;
-    //font-family: ;
+    font-family: $font1;
+    font-weight: 400;
 }
 
 a {
     text-decoration: none;
     color: white;
     font-size: 0.85em;
+    font-family: $font1;
+    font-weight: 600;
     // Media Query for Mobile/Tablet
     @media screen and (min-width: 50em) {
         font-size: 0.9em;
@@ -61,6 +167,9 @@ a {
 li {
     list-style-type: none;
     font-size: 0.85em;
+    font-family: $font3;
+    font-weight: 250;
+    //letter-spacing: 1px;
     // Media Query for Mobile/Tablet
     @media screen and (min-width: 50em) {
         font-size: 0.9em;
@@ -70,6 +179,8 @@ li {
 p {
     line-height: 1.75;
     font-size: 0.85em;
+    font-family: $font3;
+    font-weight: 300;
     // Media Query for Mobile/Tablet
     @media screen and (min-width: 50em) {
         font-size: 0.9em;
@@ -79,13 +190,21 @@ p {
 blockquote {
     line-height: 1.75;
     font-size: 0.85em;
+    font-family: $font3;
+    font-weight: 400;
     // Media Query for Mobile/Tablet
     @media screen and (min-width: 50em) {
         font-size: 0.9em;
     }
 }
 
+span {
+    font-family: $font3;
+    font-weight: 700
+}
+
 img {
     border-radius: 1px;
 }
+
 

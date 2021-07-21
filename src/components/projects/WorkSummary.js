@@ -66,10 +66,9 @@ const WorkSummary = () => {
                     data-aos-duration="800"
                     data-aos-mirror="true"
                 >
-                    I believe that employing all the latest development technologies can only get a 
-                    website so far online. As a front-end developer, my goal is to build websites that 
-                    not only look good, but create a seamless user experience through research, analytics, 
-                    and SEO best practices.
+                    As a front-end developer, my goal is to build websites that not only look good,
+                     but create a seamless user experience through research, analytics, and SEO best practices. 
+                     I value simple content structure, clean design patterns, and thoughtful interactions.
                 </blockquote>
             </section>
 
@@ -89,7 +88,7 @@ const WorkSummary = () => {
                 </h2>
 
                 <div className="highlights-container">
-                    <IconContext.Provider value={ {size:"2em", color:"purple"} }>
+                    <IconContext.Provider value={ {size:"2em", color:"#50B492"} }>
                         {/* Icon 01 */}
                         <div 
                             className="highlights-icon-01"

@@ -4,16 +4,27 @@
 ---------------------------------------------------------------
 */
 // --- Website Color Palette 
+// - Accent Colors
+$accent1: #50B492;
 
+// Banner/Gallery Border
+$galleryBorder: #202225;
+$bannerBorder: rgb(24, 24, 24);
 // --- Fonts ---
+// - Portfolio Fonts
+// - Expletus Sans
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+// - Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// - Ubuntu
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 // - Josefin Sans
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 // - Open Sans
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 // - Merriweather
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
-// - Roboto
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 // - VT323
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 // - Montserrat
@@ -21,6 +32,9 @@
 // - BioRhyme
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
 
-//$font1:
-//$font2:
-//$font3:
+// - Header Font
+$font1: "Expletus Sans", sans-serif;
+// - Body Font
+$font2: "Roboto", sans-serif;
+$font3: "Ubuntu", sans-serif;
+$font4: "Montserrat", sans-serif;

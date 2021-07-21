@@ -19,8 +19,8 @@ const Footer = () => {
     return (
         <footer className="footer" id="contact">
             {/* Top Section */}
+            <ScrollToTop />
             <div className="footer__top-section">
-                <ScrollToTop />
 
                 <h3 
                    data-aos="fade-right"
@@ -30,7 +30,7 @@ const Footer = () => {
                    data-aos-duration="800"
                    data-aos-mirror="true"
                 >
-                    Want to Contact Me? 
+                    Want to Chat? 
                 </h3>
 
                 {/* Email Link */}
@@ -39,7 +39,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="button"
                 >
-                    Let's Chat! / Reach Out To Me!
+                    Contact Me Here
                 </a>
             </div>
             
@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="footer__bottom-section">
                 <h4>Connect With Me!</h4>
                 <div className="footer-social-icons">
-                    <IconContext.Provider value={{ color: "magenta", size: "1.25em" }}>
+                    <IconContext.Provider value={{ color: "white", size: "1.25em" }}>
                         <a
                             href="https://twitter.com/vinsondesigns"
                             target="_blank"

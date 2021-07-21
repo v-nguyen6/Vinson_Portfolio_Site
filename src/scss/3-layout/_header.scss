@@ -25,10 +25,12 @@ header {
             h1 {
                 font-size: 1.2em;
                 margin-left: 20px;
-                //font-family: ;
+                font-family: $font1;
+                font-weight: 400;
                 padding: 5px 10px;
                 span {
-                    //font-family: ;
+                    font-family: $font1;
+                    font-weight: 800;
                 }
             }
 
@@ -36,7 +38,7 @@ header {
                 border-style: none;
                 &:hover {
                     background: none;
-                    color: indigo;
+                    color: $accent1;
                 }
             }
 
@@ -44,7 +46,7 @@ header {
             .hamburger-react {
                 margin-right: 10px;
                 &:hover {
-                    //cursor: url(), auto;
+                    color: $accent1;
                 }
             }
 
@@ -56,8 +58,9 @@ header {
                         transition: all 0.5s ease-out;
                         border-style: none;
                         text-transform: uppercase;
+                        font-size: 1em;
                         &:hover {
-                            color: indigo;
+                            color: $accent1;
                         }
                     }
                 }
@@ -90,8 +93,8 @@ header {
 
             // Navigation Menu Line Break
             hr.menu-break {
-                background: red;
-                border: 3px solid red;
+                background: $accent1;
+                border: 3px solid $accent1;
                 height: 3px;
                 width: 120px;
                 margin: 10px auto 20px auto;
@@ -104,6 +107,13 @@ header {
                 justify-content: space-around;
                 align-items: center;
                 width: 125px;
+
+                svg {
+                    transition: all 0.4s ease-out;
+                    &:hover {
+                        fill: $accent1;
+                    }
+                }
             }
         }
     }

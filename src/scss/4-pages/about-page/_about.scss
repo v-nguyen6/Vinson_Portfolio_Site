@@ -13,10 +13,10 @@
     font-size: 1em;
     // Global HR
     hr {
-        border: 1px solid blue;
+        border: 1px solid $accent1;
         width: 50px;
         height: 5px;
-        background: blue;
+        background: $accent1;
         margin: 15px auto;
     }
 
@@ -24,6 +24,7 @@
     // My Summary
     .my-summary {
         @include col-center-items;
+        background: rgba(black, 0.875);
 
         &__image {
             padding: 20px;
@@ -47,10 +48,10 @@
             }
 
             .headline {
-                //font-family: ;
+                font-family: $font3;
                 font-size: 1em;
                 line-height: 1.5;
-                //font-style: italic;
+                font-style: italic;
                 text-align: center;
             }
 

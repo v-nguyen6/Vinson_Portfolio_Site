@@ -15,10 +15,10 @@
     color: white;
 
     hr {
-        border: 1px solid red;
+        border: 1px solid $accent1;
         width: 50px;
         height: 5px;
-        background: red;
+        background: $accent1;
         margin: 15px 0px;
     }
 }

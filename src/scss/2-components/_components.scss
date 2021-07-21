@@ -26,16 +26,16 @@ a {
     transition: all 0.5s ease-out;
     text-align: center;
     &:hover {
-        background: red;
-        // cursor: url(""), auto;
-        border: 1px solid red;
+        background: $accent1;
+        //cursor: url("../../assets/cursor-1.png"), auto;
+        border: 1px solid $accent1;
     }
 }
 
 // Mostly for Nav bar to show where user is at
 a:active, 
 a:focus {
-    color: red;
+    color: $accent1;
 }
 
 /*
@@ -44,10 +44,136 @@ a:focus {
 ---------------------------------------------------------------
 */
 button.scroll-to-top-btn {
-    border-style: none;
-    margin-bottom: 45px;
-    &:hover {
-        border-style: none;
-        //cursor: url(), auto;
-    }
+   border: 1px solid transparent;
+   margin: auto;
+   //margin-bottom: -30px;
+   color: white;
+   background-color: transparent;
+   display: flex;
+   flex-direction: row;
+   align-self: center;
+   justify-self: center;
+   &:hover {
+      border: 1px solid transparent;
+      cursor: pointer;
+      background: $accent1;
+      svg {
+         color: white;
+      }
+   }
 }
+
+/*
+---------------------------------------------------------------
+* --- Scroll Down Widget
+---------------------------------------------------------------
+*/
+.scroll-downs {
+   margin-top: 20px;
+   @include col-center-items;
+   &:hover {
+      * {
+         color: $accent1;
+         border-color: $accent1;
+      }
+      .mousey {
+         background: transparent;
+         margin: 0px;
+         border-width: 2px;
+      }
+      .scroller {
+         background: $accent1;
+      }
+      .scroll-downs__label {
+         color: $accent1;
+      }
+   }
+   &__label {
+      margin-top: 10px;
+      font-size: 0.75em;
+      text-align: center;
+      width: 100%;
+   }
+}
+
+// oval shape that creates the scroll down feature
+.mousey {
+   width: 3px;
+   padding: 5px 8px;
+   height: 20px;
+   border: 2px solid #fff;
+   border-radius: 25px;
+   opacity: 0.75;
+   box-sizing: content-box;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+// Dot that mimics mouse
+.scroller {
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   background-color: $accent1;
+   animation-name: scroll;
+   animation-duration: 2.2s;
+   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+   animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+   0% {
+      opacity: 0;
+   }
+   10% {
+      transform: translateY(0);
+      opacity: 1;
+   }
+   100% {
+      transform: translateY(15px);
+      opacity: 0;
+   }
+}
+
+/*
+---------------------------------------------------------------
+* --- Social Widgets Styling
+---------------------------------------------------------------
+*/
+.fixed-social-icons {
+   display: none;
+
+   a {
+      border-style: none;
+      &:hover {
+         background: none;
+      }
+   }
+
+   svg {
+      transition: all 0.4s ease-out;
+      &:hover {
+         fill: $accent1;
+      }
+   }
+
+
+   @media screen and (min-width: 50em) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      z-index: 9999;
+      transition: all 0.5s ease-out;
+   }
+}
+ 
+ .fixed-social-icons--off {
+    display: none;
+ }
+ 

@@ -27,7 +27,7 @@ import SingleDinoDashGame from "./components/projects/single-project-pages/Singl
 import SinglePortfolioProject from "./components/projects/single-project-pages/SinglePortfolioProject";
 
 // Widgets
-//import Social from './components/
+import Social from "../src/components/widgets/Social";
 // - Animate On Scroll: Animates objects when user scrolls 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,27 +38,49 @@ function App() {
   // used to initialize AOS throughout the react app (must call only once!)
   AOS.init();
 
-  const [currDesktop, setCurrDesktop] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(true);
 
   // Google Analytics
 
-  /*
+  
   // Custom Cursor Effect
   useEffect(() => {
     // Determine is user is on desktop or mobile
     toggleCursor();
-    const cursor = document.querySelector(".cursor")
+    const cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", (e) => {
+      cursor.setAttribute(
+        "style",
+        // Where animation radius is placed
+        "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+      );
+    });
+    // Event listener for when user clicks button 
+    document.addEventListener("click", () => {
+      cursor.classList.add("expand");
+      setTimeout(() => {
+        cursor.classList.remove("expand");
+      }, 500);
+    });
+  }, []);
 
-  });
-
-  */
+  const toggleCursor = () => {
+    if (window.innerWidth >= 800) {
+      setIsDesktop(true);
+    } else {
+      setIsDesktop(false);
+    }
+  };
 
   return (
     <Router>
       <React.Fragment>
         <Header />
+        {/* Custom Cursor */}
+        {isDesktop === true && <div className="cursor"></div>}
+
         <div className="wrapper">
-          <main className="main-page">
+          <main className="main main-page">
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/about" component={About} />
@@ -71,6 +93,7 @@ function App() {
             </Switch>
           </main>
         </div>
+        <Social />
         <Footer />
       </React.Fragment>
     </Router>
