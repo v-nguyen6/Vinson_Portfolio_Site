@@ -32,15 +32,18 @@ body {
     overflow-x: hidden;
 
     // - Background Image
+    
     // Mobile Background
+    /*
     @media screen and (min-width: 300px) {
         background-image: url("../../assets/background-mobile.jpg");
         background-attachment: fixed;
         background-position-x: center;
         background-position-y: center;
         background-repeat: no-repeat;
-        background-size: 400px;
+        background-size: 360px 640px;
     }
+    /*
     // Tablet Background
     @media screen and (min-width: 500px) {
         background-image: url("../../assets/background-tablet.jpg");
@@ -50,8 +53,9 @@ body {
         background-repeat: no-repeat;
         background-size: 1150px;
     }
+    */
     // Desktop Background
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 690px) {
         background-image: url("../../assets/background-desktop.jpg");
         background-attachment: fixed;
         background-position-x: center;
