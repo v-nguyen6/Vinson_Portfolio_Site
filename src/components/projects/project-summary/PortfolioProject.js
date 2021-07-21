@@ -58,7 +58,7 @@ const PortfolioProject = () => {
                     </Link>
 
                     <a
-                        href="http://vnguyen.bcitwebdeveloper.ca/twd-movie-app/"
+                        href="https://portfolio.vinsonnguyen.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn"
