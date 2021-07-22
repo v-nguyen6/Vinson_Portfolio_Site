@@ -11,13 +11,13 @@ header {
         width: 100%;
         font-size: 1em;
         .headroom {
-            width: inherit;
-            height: 85px;
-            background: black;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            width: inherit;
+            height: 75px;
+            background: black;
             backdrop-filter: blur(10px);
             color: white;
             z-index: 9999;
