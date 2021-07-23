@@ -43,7 +43,7 @@ import AOS from "aos";
                     data-aos-duration="850"
                     data-aos-mirror="true"
                 >
-                    Front-End Web Developer & Graphic Designer with background in UX / UI based in Vancouver, BC.
+                    Front-End Web Developer & Graphic Designer with background in UX / UI based in Vancouver.
                 </p>
 
                 <div 

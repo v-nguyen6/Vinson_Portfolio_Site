@@ -44,7 +44,7 @@ header {
 
             // Header Hamburger Button 
             .hamburger-react {
-                margin-right: 10px;
+                margin-right: 25px;
                 &:hover {
                     color: $accent1;
                 }
@@ -58,7 +58,8 @@ header {
                         transition: all 0.5s ease-out;
                         border-style: none;
                         text-transform: uppercase;
-                        font-size: 0.9em;
+                        padding: 5px 10px;
+                        font-size: 1em;
                         &:hover {
                             color: $accent1;
                         }
@@ -72,13 +73,6 @@ header {
                     height: 100vh;
                     width: 100%;
                     z-index: 99;
-                    /*
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center; 
-                    */
-                    // replace with mixin
                     @include col-center-items;
                     background: black;
                     backdrop-filter: blur(10px);
@@ -87,6 +81,10 @@ header {
                         margin-bottom: 20px;
                         font-size: 2em;
                         text-align: center;
+                        a {
+                            font-size: 0.9em;
+                            margin: 0px;
+                        }
                     }
                 }
             }
@@ -96,7 +94,7 @@ header {
                 background: $accent1;
                 border: 3px solid $accent1;
                 height: 3px;
-                width: 120px;
+                width: 110px;
                 margin: 10px auto 20px auto;
             }
 
@@ -119,8 +117,8 @@ header {
     }
 }
 
-// Media Query for Header Section (50em == 800px)
-@media screen and (min-width: 800px) {
+// Media Query for Header Section
+@media screen and (min-width: 50em) {
     header {
         .headroom-wrapper {
             .headroom {
@@ -149,7 +147,7 @@ header {
                         flex-direction: row;
                         justify-content: space-around;
                         align-items: center;
-                        text-transform: lowercase;
+                        //text-transform: lowercase;
                         .main-nav__list-item {
                             font-size: 1em;
                         }

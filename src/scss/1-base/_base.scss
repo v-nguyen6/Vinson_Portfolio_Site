@@ -15,7 +15,9 @@
 */
 html {
     width: 100%;
-    ///overflow-x: hidden;
+    @media screen and (min-width: 300px) {
+        overflow-x: hidden;
+    }
     * {
         margin: 0px;
         padding: 0px;
@@ -30,10 +32,11 @@ html {
 body {
     background: black;
     width: 100%;
-    //overflow-x: hidden;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 
     // - Background Image
-    
     // Mobile Background
     /*
     @media screen and (min-width: 300px) {
@@ -55,6 +58,7 @@ body {
         background-size: 1150px;
     }
     */
+    
     // Desktop Background
     @media screen and (min-width: 690px) {
         background-image: url("../../assets/background-desktop.jpg");
@@ -62,15 +66,17 @@ body {
         background-position-x: center;
         background-position-y: center;
         background-repeat: no-repeat;
-        background-size: 1300px;
+        background-size: 100px;
     }
     
     @media screen and (min-width: 1350px) {
         background-size: cover;
     }
+    
 
     // - Cursor / Animations & Effects
     cursor: url("../../assets/cursor-1.png"), auto;
+    
     .main-page {
         width: 100%;
     }

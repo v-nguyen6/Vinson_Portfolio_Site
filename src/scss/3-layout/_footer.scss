@@ -19,7 +19,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 72.5%;
+        height: 70%;
 
         h3 {
             font-size: 2em;
@@ -45,7 +45,7 @@
     // Bottom Section 
     &__bottom-section {
         background: transparent;
-        height: 25%;
+        height: 30%;
         @include col-center-items;
         .footer-social-icons {
             a {
